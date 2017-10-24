@@ -17,7 +17,7 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>ftp://dev.sangah.com/util/pmis-archive/2/hsdwc/</PublishUrl>
+    <PublishUrl>D:\downloads\hsdwc_archive\web\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -32,8 +32,9 @@
     <SupportUrl>http://www.sangah.com</SupportUrl>
     <ProductName>PMIS Offline Archive</ProductName>
     <PublisherName>SangAh</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>42</ApplicationRevision>
+    <ApplicationRevision>46</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -63,11 +64,10 @@
     <ApplicationIcon>resources\sangah_logo_64.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>86F3036BA5007A33F6F8F4F0811B4A65151C0386</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>0D99A948DD616B83F55E25E6A93176014A3B2A3E</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>THA_CODE_CODT301084.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -76,10 +76,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>archive2_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -212,7 +213,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="archive2_TemporaryKey.pfx" />
     <Content Include="data\archive.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -222,6 +222,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="THA_CODE_CODT301084.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

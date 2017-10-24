@@ -103,36 +103,29 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
-            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>공문서 &gt; 문서송부전</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &g" +
-            "t; CM-설계 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; C" +
-            "M-시공 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-시공" +
-            " &gt; 시공</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 가설공사</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; CM</string" +
-            ">\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 가설건물공사</strin" +
-            "g>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 발주처</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 전력비</string>\r\n" +
-            "  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 준공도서작성비</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 지급자재현장관리비</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 회의자료</string>\r\n  <string>문서 및 도면 " +
-            "&gt; 사업비/계약 &gt; 기성자료실</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; VE자료실</string>" +
-            "\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 도면 &gt; 기본도면/도서</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 설계관리 &gt; 도면 &gt; 시공도면/도서</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &g" +
-            "t; 설계단계 CM 월간보고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 일일보" +
-            "고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 주간보고</string>\r\n  " +
-            "<string>문서 및 도면 &gt; 시공관리 &gt; 감리/CM일지</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt" +
-            "; 감리월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 감리주간보고</string>\r\n  <string>문" +
-            "서 및 도면 &gt; 시공관리 &gt; 시공월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 시공일일보고</" +
-            "string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검수요청서</st" +
-            "ring>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검측요청서</stri" +
-            "ng>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전 관리 계획</string>\r\n  <string" +
-            ">문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/" +
-            "안전/환경 &gt; 품질관리 &gt; 품질관리계획</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 품질관리 " +
-            "&gt; 품질자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 콘텐츠 관리 계약 문서" +
-            "</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 폐기물 관리</string>\r\n  <st" +
-            "ring>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경 관리 계획</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경자료실</string>\r\n</ArrayOfString>")]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
+  <string>공문서 &gt; 문서송부전</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-설계</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-설계 &gt; CM</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-시공</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-시공 &gt; CM</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-시공 &gt; 시공</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; CM</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 발주처</string>
+  <string>문서 및 도면 &gt; co-operation &gt; 회의자료</string>
+  <string>문서 및 도면 &gt; 사업비/계약 &gt; 기성자료실</string>
+  <string>문서 및 도면 &gt; 설계관리 &gt; VE자료실</string>
+  <string>문서 및 도면 &gt; 설계관리 &gt; 도면 &gt; 기본도면/도서</string>
+  <string>문서 및 도면 &gt; 설계관리 &gt; 도면 &gt; 시공도면/도서</string>
+  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 월간보고</string>
+  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 일일보고</string>
+  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 주간보고</string>
+  <string>문서 및 도면 &gt; 시공관리 &gt; 감리/CM일지</string>
+  <string>문서 및 도면 &gt; 시공관리 &gt; 감리주간보고</string>
+  <string>문서 및 도면 &gt; 시공관리 &gt; 시공일일보고</string>
+</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_type {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["register_type"]));
