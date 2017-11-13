@@ -63,16 +63,21 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>공통</string>
-  <string>건축</string>
-  <string>기계</string>
-  <string>토목</string>
-  <string>조경</string>
-  <string>전기</string>
-  <string>통신</string>
-  <string>기타</string>
-  <string>소방</string>
-  <string>관급자재</string>
+  <string>Common</string>
+  <string>Process</string>
+  <string>Civil</string>
+  <string>Architecture</string>
+  <string>Mechanical</string>
+  <string>Piping</string>
+  <string>Electrical</string>
+  <string>Fire Fighting</string>
+  <string>HVAC</string>
+  <string>Quality</string>
+  <string>Heat Pipe</string>
+  <string>Environment</string>
+  <string>Instrument</string>
+  <string>Heat Resources</string>
+  <string>Project General</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_discipline {
             get {
@@ -105,34 +110,175 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>공문서 &gt; 문서송부전</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &g" +
-            "t; CM-설계 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; C" +
-            "M-시공 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-시공" +
-            " &gt; 시공</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 가설공사</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; CM</string" +
-            ">\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 가설건물공사</strin" +
-            "g>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 발주처</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 전력비</string>\r\n" +
-            "  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 준공도서작성비</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 지급자재현장관리비</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 회의자료</string>\r\n  <string>문서 및 도면 " +
-            "&gt; 사업비/계약 &gt; 기성자료실</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; VE자료실</string>" +
-            "\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 도면 &gt; 기본도면/도서</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 설계관리 &gt; 도면 &gt; 시공도면/도서</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &g" +
-            "t; 설계단계 CM 월간보고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 일일보" +
-            "고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 주간보고</string>\r\n  " +
-            "<string>문서 및 도면 &gt; 시공관리 &gt; 감리/CM일지</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt" +
-            "; 감리월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 감리주간보고</string>\r\n  <string>문" +
-            "서 및 도면 &gt; 시공관리 &gt; 시공월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 시공일일보고</" +
-            "string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검수요청서</st" +
-            "ring>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검측요청서</stri" +
-            "ng>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전 관리 계획</string>\r\n  <string" +
-            ">문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/" +
-            "안전/환경 &gt; 품질관리 &gt; 품질관리계획</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 품질관리 " +
-            "&gt; 품질자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 콘텐츠 관리 계약 문서" +
-            "</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 폐기물 관리</string>\r\n  <st" +
-            "ring>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경 관리 계획</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경자료실</string>\r\n</ArrayOfString>")]
+            "tring>공문서</string>\r\n  <string>공문서 &gt; CAR</string>\r\n  <string>공문서 &gt; NCR</str" +
+            "ing>\r\n  <string>공문서 &gt; NCR &gt; NCR Step2</string>\r\n  <string>공문서 &gt; NCR &gt" +
+            "; NCR Step3</string>\r\n  <string>공문서 &gt; PUNCH</string>\r\n  <string>공문서 &gt; PUNC" +
+            "H &gt; PUNCH Step2</string>\r\n  <string>공문서 &gt; 문서송부전(설계)</string>\r\n  <string>공문" +
+            "서 &gt; 문서송부전(설계) &gt; 검토송부전(설계)</string>\r\n  <string>공문서 &gt; 문서송부전(시공)</string>\r" +
+            "\n  <string>공문서 &gt; 서신문서</string>\r\n  <string>공문서 &gt; 서신문서 &gt; 일반서신</string>\r\n " +
+            " <string>공문서 &gt; 서신문서 &gt; 작업지시서</string>\r\n  <string>공문서 &gt; 서신문서 &gt; 회의록</st" +
+            "ring>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면</string>\r\n  <string>문서/도면 &gt; 설계관리 &" +
+            "gt; 설계도면 &gt; BHI (HRSG)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; LHE " +
+            "(Closed DH Circuit Heat Exchagner (Plate type))</string>\r\n  <string>문서/도면 &gt; 설" +
+            "계관리 &gt; 설계도면 &gt; LS산전 (154kV GIS &amp; Auxiliaries)</string>\r\n  <string>문서/도면 " +
+            "&gt; 설계관리 &gt; 설계도면 &gt; LS전선 (154kV Power Cable)</string>\r\n  <string>문서/도면 &gt;" +
+            " 설계관리 &gt; 설계도면 &gt; MHPS</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 거산P" +
+            "&amp;F (Circulating Water Pipe)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &g" +
+            "t; 귀뚜라미범양냉방</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 기본도면</string>\r\n  " +
+            "<string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 대아펌프 (General Service Pump (PB))</string>" +
+            "\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 대아펌프 (SUMP PUMP)</string>\r\n  <string>" +
+            "문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 대일아쿠아 (Cooling Tower)</string>\r\n  <string>문서/도면 &" +
+            "gt; 설계관리 &gt; 설계도면 &gt; 리트코 (CEMS)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면" +
+            " &gt; 반도호이스트 (Crane &amp; Hoist)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &" +
+            "gt; 밸프주식회사 (Manual Valves &amp; Special Items)</string>\r\n  <string>문서/도면 &gt; 설계" +
+            "관리 &gt; 설계도면 &gt; 부쉬코리아 (Condenser Vacuum Pump)</string>\r\n  <string>문서/도면 &gt; 설" +
+            "계관리 &gt; 설계도면 &gt; 블루버드 (SCR(Selective catalytic reduction))</string>\r\n  <string" +
+            ">문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 삼원 (가압장 / 약품주입설비)</string>\r\n  <string>문서/도면 &gt;" +
+            " 설계관리 &gt; 설계도면 &gt; 성화산업 (Shop Fabricated Steel Pipe)</string>\r\n  <string>문서/도면" +
+            " &gt; 설계관리 &gt; 설계도면 &gt; 성화산업 (Spring Hanger &amp; Support)</string>\r\n  <string" +
+            ">문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 세대에너택 (Condenser)</string>\r\n  <string>문서/도면 &gt;" +
+            " 설계관리 &gt; 설계도면 &gt; 세화계전 (Field Instrument)</string>\r\n  <string>문서/도면 &gt; 설계관리" +
+            " &gt; 설계도면 &gt; 승인도면</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 신신기계 (Ma" +
+            "in &amp; Aux. Cooling Water Pump)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 " +
+            "&gt; 아세아이엔티 (DC &amp; UPS System)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 " +
+            "&gt; 에너지엔 (Heat Exchagner)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 엔케" +
+            "이텍 (SERVICE GAS SYSTEM(N2,H2,CO2))</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면" +
+            " &gt; 연우기술 (시험장비, 실험실장비)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 와이펙 " +
+            "(Field&amp;Shop Fabricated Tank)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &" +
+            "gt; 와이펙 (General Pipe &amp; Fitting)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계" +
+            "도면 &gt; 웰크론한텍 (수, 폐수 처리설비)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 인디" +
+            "고존</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 일진전기 (Power Transformers)<" +
+            "/string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 정우산기 (지역난방 여과기)</string>\r\n  <" +
+            "string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 청우하이드로 (Condensate Pump)</string>\r\n  <stri" +
+            "ng>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 청우하이드로 (General Service Pump (DH))</string>\r\n " +
+            " <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 코오롱엔솔루션 (약품주입설비-CIS)</string>\r\n  <string" +
+            ">문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 플로우테크(압력유지설비)</string>\r\n  <string>문서/도면 &gt; 설계관" +
+            "리 &gt; 설계도면 &gt; 한국골프산업개발</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 한국하" +
+            "니웰 (Sampling System)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 한신기계공업 (" +
+            "Compressed Air System)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 한진중공업<" +
+            "/string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 한창게이지 (CV&amp;MOV)</string>\r\n" +
+            "  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 한창게이지 (manual valve 가압장)</string>\r\n  <s" +
+            "tring>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 한창게이지 (manual valve-추가)</string>\r\n  <string" +
+            ">문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 현대중공업 (Fuel Gas Compressor)</string>\r\n  <string>" +
+            "문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 화성보일러 (Auxiliary Boiler &amp; Peak Load Boiler)</" +
+            "string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 효성 (ECMS)</string>\r\n  <string>" +
+            "문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 효성 (EDG(비상발전기))</string>\r\n  <string>문서/도면 &gt; 설계" +
+            "관리 &gt; 설계도면 &gt; 효성 (배전반)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 효성" +
+            "C&amp;P (Overhead Crane)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; 효성굿스" +
+            "프링스 (Boiler Feed Water Pump)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도면 &gt; " +
+            "효성중공업 (IPB)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서</string>\r\n  <string>문서" +
+            "/도면 &gt; 설계관리 &gt; 설계도서 &gt; BHI (HRSG)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt;" +
+            " 설계도서 &gt; LHE (Closed DH Circuit Heat Exchagner (Plate type))</string>\r\n  <stri" +
+            "ng>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; LS산전 (154kV GIS &amp; Auxiliaries)</string>\r\n " +
+            " <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; LS전선 (154kV GIS &amp; Auxiliaries)</stri" +
+            "ng>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; MHPS</string>\r\n  <string>문서/도면 &gt" +
+            "; 설계관리 &gt; 설계도서 &gt; 거산P&amp;F (Circulating Water Pipe)</string>\r\n  <string>문서/" +
+            "도면 &gt; 설계관리 &gt; 설계도서 &gt; 계통설명서</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 " +
+            "&gt; 공사시방서</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 귀뚜라미범양냉방</string>\r" +
+            "\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 기본검토서</string>\r\n  <string>문서/도면 &gt; 설" +
+            "계관리 &gt; 설계도서 &gt; 기술규격서</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 남도이엔" +
+            "지 (General Tool)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 대아펌프 (Genera" +
+            "l Service Pump (PB))</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 대아펌프 (SU" +
+            "MP PUMP)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 대일아쿠아 (Cooling Tower" +
+            ")</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 리트코 (CEMS)</string>\r\n  <str" +
+            "ing>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 목록</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설" +
+            "계도서 &gt; 반도호이스트 (Crane &amp; Hoist)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도" +
+            "서 &gt; 밸프주식회사 (Manual Valves &amp; Special Items)</string>\r\n  <string>문서/도면 &gt;" +
+            " 설계관리 &gt; 설계도서 &gt; 부쉬코리아 (Condenser Vacuum Pump)</string>\r\n  <string>문서/도면 &gt" +
+            "; 설계관리 &gt; 설계도서 &gt; 블루버드 (SCR(Selective catalytic reduction))</string>\r\n  <str" +
+            "ing>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 삼원 (가압장 / 약품주입설비)</string>\r\n  <string>문서/도면 &" +
+            "gt; 설계관리 &gt; 설계도서 &gt; 설계검토서</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt;" +
+            " 설계계산서</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 설계기준서</string>\r\n  <str" +
+            "ing>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 성화산업 (Shop Fabricated Steel Pipe)</string>\r\n " +
+            " <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 성화산업 (Spring Hanger &amp; Support)</stri" +
+            "ng>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 세대에너택 (Condenser)</string>\r\n  <str" +
+            "ing>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 세화계전 (Field Instrument)</string>\r\n  <string>문" +
+            "서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 신신기계 (Main &amp; Aux. Cooling Water Pump)</string>" +
+            "\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 아세아이엔티 (DC &amp; UPS System)</string>" +
+            "\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 에너지엔 (Heat Exchagner)</string>\r\n  <st" +
+            "ring>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 엔케이텍 (SERVICE GAS SYSTEM(N2,H2,CO2))</string" +
+            ">\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 연우기술 (시험장비, 실험실장비)</string>\r\n  <stri" +
+            "ng>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 와이펙 (Field&amp;Shop Fabricated Tank)</string>\r" +
+            "\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 와이펙 (General Pipe &amp; Fitting)</stri" +
+            "ng>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 운전모드</string>\r\n  <string>문서/도면 &gt" +
+            "; 설계관리 &gt; 설계도서 &gt; 웰크론한텍 (수, 폐수 처리설비)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt" +
+            "; 설계도서 &gt; 일진전기 (Power Transformers)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설" +
+            "계도서 &gt; 절차서 및 지침서</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 정우산기 (지역난방" +
+            " 여과기)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 제원표</string>\r\n  <string" +
+            ">문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 청우하이드로 (Condensate Pump)</string>\r\n  <string>문서/" +
+            "도면 &gt; 설계관리 &gt; 설계도서 &gt; 청우하이드로 (General Service Pump (DH))</string>\r\n  <stri" +
+            "ng>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 코오롱엔솔루션 (약품주입설비-CIS)</string>\r\n  <string>문서/도면" +
+            " &gt; 설계관리 &gt; 설계도서 &gt; 플로우테크(압력유지설비)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt;" +
+            " 설계도서 &gt; 한국골프산업개발</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 한국하니웰 (Sa" +
+            "mpling System)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 한신기계공업 (Compre" +
+            "ssed Air System)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 한진중공업</strin" +
+            "g>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 한창게이지 (manual valve 가압장)</string>\r\n" +
+            "  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 한창게이지 (manual valve-추가)</string>\r\n  <st" +
+            "ring>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 한창게이지(CV&amp;MOV)</string>\r\n  <string>문서/도면 " +
+            "&gt; 설계관리 &gt; 설계도서 &gt; 현대중공업 (Fuel Gas Compressor)</string>\r\n  <string>문서/도면 &" +
+            "gt; 설계관리 &gt; 설계도서 &gt; 화성보일러 (Auxiliary Boiler &amp; Peak Load Boiler)</string>" +
+            "\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 효성 (ECMS)</string>\r\n  <string>문서/도면 &" +
+            "gt; 설계관리 &gt; 설계도서 &gt; 효성 (EDG(비상발전기))</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt;" +
+            " 설계도서 &gt; 효성 (배전반)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 효성C&amp;P" +
+            " (Overhead Crane)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 효성굿스프링스 (Bo" +
+            "iler Feed Water Pump)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계도서 &gt; 효성중공업 (" +
+            "IPB)</string>\r\n  <string>문서/도면 &gt; 설계관리 &gt; 설계변경문서 &gt; 현장변경요청 (FCR)</string>\r" +
+            "\n  <string>문서/도면 &gt; 시공관리 &gt; MHPS TA Report</string>\r\n  <string>문서/도면 &gt; 시공" +
+            "관리 &gt; 감리주간보고</string>\r\n  <string>문서/도면 &gt; 시공관리 &gt; 분야별감리업무일지</string>\r\n  <s" +
+            "tring>문서/도면 &gt; 시공관리 &gt; 시공계획서 &gt; 기계</string>\r\n  <string>문서/도면 &gt; 시공관리 &gt" +
+            "; 시공계획서 &gt; 전기</string>\r\n  <string>문서/도면 &gt; 시공관리 &gt; 시공계획서 &gt; 토목</string>\r" +
+            "\n  <string>문서/도면 &gt; 시공관리 &gt; 시공일일보고</string>\r\n  <string>문서/도면 &gt; 시공관리 &gt; " +
+            "야간작업안전점검일지</string>\r\n  <string>문서/도면 &gt; 시공관리 &gt; 주말근무계획</string>\r\n  <string>문" +
+            "서/도면 &gt; 시공관리 &gt; 책임감리업무일지</string>\r\n  <string>문서/도면 &gt; 시운전관리 &gt; Punch Lis" +
+            "t</string>\r\n  <string>문서/도면 &gt; 시운전관리 &gt; 시운전 결과서</string>\r\n  <string>문서/도면 &g" +
+            "t; 시운전관리 &gt; 시운전 교육자료</string>\r\n  <string>문서/도면 &gt; 시운전관리 &gt; 시운전 절차서</string" +
+            ">\r\n  <string>문서/도면 &gt; 시운전관리 &gt; 예비점검결과 및 시운전표</string>\r\n  <string>문서/도면 &gt; " +
+            "품질/안전/환경 &gt; 품질관리 &gt; 품질자료</string>\r\n  <string>문서/도면 &gt; 품질/안전/환경 &gt; 품질관리 &" +
+            "gt; 품질자료 &gt; 품질시험자료</string>\r\n  <string>문서/도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; Envi" +
+            "ronmental Databank</string>\r\n  <string>문서/도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; Waste " +
+            "Management document</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; I. 시스템 개요 &gt;" +
+            " 1. 시스템 개요</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; I. 시스템 개요 &gt; 2. 시스템 구" +
+            "성</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; I. 시스템 개요 &gt; 3. 시스템 시작하기</stri" +
+            "ng>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; II.시스템공통 &gt; 1. MAIN PAGE</string>\r\n  " +
+            "<string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; II.시스템공통 &gt; 2. 공통기능</string>\r\n  <string>시스템 " +
+            "데이터 &gt; 시스템 메뉴얼 &gt; III.일반관리 &gt; 1. 일반정보관리</string>\r\n  <string>시스템 데이터 &gt; 시" +
+            "스템 메뉴얼 &gt; III.일반관리 &gt; 2. 조직관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; " +
+            "III.일반관리 &gt; 3. 방문자관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; III.일반관리 &g" +
+            "t; 4. 인허가관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; III.일반관리 &gt; 5. 표준코드관" +
+            "리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; IV.사업비/계약관리 &gt; 1. 사업비계획관리</str" +
+            "ing>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; IV.사업비/계약관리 &gt; 2. 사업비집행관리</string>\r\n" +
+            "  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; IV.사업비/계약관리 &gt; 3. 사업비분석관리</string>\r\n  <str" +
+            "ing>시스템 데이터 &gt; 시스템 메뉴얼 &gt; IV.사업비/계약관리 &gt; 4. 계약관리</string>\r\n  <string>시스템 데" +
+            "이터 &gt; 시스템 메뉴얼 &gt; IX. 품질/안전/환경관리 &gt; 1. 품질관리</string>\r\n  <string>시스템 데이터 &gt" +
+            "; 시스템 메뉴얼 &gt; IX. 품질/안전/환경관리 &gt; 2. 안전관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 " +
+            "메뉴얼 &gt; IX. 품질/안전/환경관리 &gt; 3. 환경관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &g" +
+            "t; V.설계관리 &gt; 1. 설계공정관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; V.설계관리 &g" +
+            "t; 2. 표준정보관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; V.설계관리 &gt; 3. 설계진도관리" +
+            "</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; V.설계관리 &gt; 4. 현장설계관리</string>\r\n " +
+            " <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; V.설계관리 &gt; 5. 설계VE관리</string>\r\n  <string>시스템" +
+            " 데이터 &gt; 시스템 메뉴얼 &gt; V.설계관리 &gt; 6. 설계도면/도서</string>\r\n  <string>시스템 데이터 &gt; 시" +
+            "스템 메뉴얼 &gt; VI.구매관리 &gt; 1. 구매공정관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt;" +
+            " VI.구매관리 &gt; 2. 표준정보관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VI.구매관리 &g" +
+            "t; 3. 구매진도관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VI.구매관리 &gt; 4. 자재입출고" +
+            "관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VI.구매관리 &gt; 5. 구매공정사진관리</strin" +
+            "g>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VII.공정관리 &gt; 1. 시공공정관리</string>\r\n  <str" +
+            "ing>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VII.공정관리 &gt; 2. 표준정보관리</string>\r\n  <string>시스템 데이" +
+            "터 &gt; 시스템 메뉴얼 &gt; VII.공정관리 &gt; 3. 시공진도관리</string>\r\n  <string>시스템 데이터 &gt; 시스템" +
+            " 메뉴얼 &gt; VII.공정관리 &gt; 4. 공정사진관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; " +
+            "VII.공정관리 &gt; 5. 공정승인관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VIII.시공관리 " +
+            "&gt; 1. CM보고관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VIII.시공관리 &gt; 2. 시" +
+            "공보고관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VIII.시공관리 &gt; 3. 기성관리</stri" +
+            "ng>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VIII.시공관리 &gt; 4. 하도급관리</string>\r\n  <st" +
+            "ring>시스템 데이터 &gt; 시스템 메뉴얼 &gt; VIII.시공관리 &gt; 5. 기상정보관리</string>\r\n  <string>시스템 " +
+            "데이터 &gt; 시스템 메뉴얼 &gt; XI.협업관리 &gt; 1. 공지/현안관리</string>\r\n  <string>시스템 데이터 &gt; 시" +
+            "스템 메뉴얼 &gt; XI.협업관리 &gt; 2. 민원관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; X" +
+            "I.협업관리 &gt; 3. 주요일정관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; XI.협업관리 &gt;" +
+            " 4. 메시지관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; XI.협업관리 &gt; 5. 웹하드관리</s" +
+            "tring>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; XI.협업관리 &gt; 6. PMIS관리</string>\r\n  <" +
+            "string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; Ⅹ.문서/자료 &gt; 1. 문서현황</string>\r\n  <string>시스템 데이" +
+            "터 &gt; 시스템 메뉴얼 &gt; Ⅹ.문서/자료 &gt; 2. 문서관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴" +
+            "얼 &gt; Ⅹ.문서/자료 &gt; 3. 승인함관리</string>\r\n  <string>시스템 데이터 &gt; 시스템 메뉴얼 &gt; Ⅹ.문서/" +
+            "자료 &gt; 4. Workflow</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_type {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["register_type"]));
