@@ -232,6 +232,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\profile.Default.yaml" />
+    <None Include="data\profile.DP2.yaml" />
+    <None Include="data\profile.SJA.yaml" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

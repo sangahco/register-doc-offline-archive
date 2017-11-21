@@ -63,16 +63,15 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>공통</string>
-  <string>건축</string>
-  <string>기계</string>
-  <string>토목</string>
-  <string>조경</string>
-  <string>전기</string>
-  <string>통신</string>
-  <string>기타</string>
-  <string>소방</string>
-  <string>관급자재</string>
+  <string>건축 (Architectural)</string>
+  <string>토목 (Civil)</string>
+  <string>전기 (Electrical)</string>
+  <string>소방 (Fire)</string>
+  <string>조경 (Landscape)</string>
+  <string>기계 (Mechanical)</string>
+  <string>통신 (Network)</string>
+  <string>배관 (Plant Design)</string>
+  <string>구조 (Structural)</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_discipline {
             get {
@@ -87,10 +86,14 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>승인용</string>
-  <string>공사용</string>
-  <string>최종용</string>
-  <string>참고용</string>
+  <string>Draft</string>
+  <string>For Information</string>
+  <string>For Review</string>
+  <string>For Approval</string>
+  <string>For Construction</string>
+  <string>For Final</string>
+  <string>As-Built</string>
+  <string>No Longer In Use</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_status {
             get {
@@ -105,34 +108,71 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>공문서 &gt; 문서송부전</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &g" +
-            "t; CM-설계 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; C" +
-            "M-시공 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-시공" +
-            " &gt; 시공</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 가설공사</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; CM</string" +
-            ">\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 가설건물공사</strin" +
-            "g>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 발주처</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 전력비</string>\r\n" +
-            "  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 준공도서작성비</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 지급자재현장관리비</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 회의자료</string>\r\n  <string>문서 및 도면 " +
-            "&gt; 사업비/계약 &gt; 기성자료실</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; VE자료실</string>" +
-            "\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 도면 &gt; 기본도면/도서</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 설계관리 &gt; 도면 &gt; 시공도면/도서</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &g" +
-            "t; 설계단계 CM 월간보고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 일일보" +
-            "고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 주간보고</string>\r\n  " +
-            "<string>문서 및 도면 &gt; 시공관리 &gt; 감리/CM일지</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt" +
-            "; 감리월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 감리주간보고</string>\r\n  <string>문" +
-            "서 및 도면 &gt; 시공관리 &gt; 시공월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 시공일일보고</" +
-            "string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검수요청서</st" +
-            "ring>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검측요청서</stri" +
-            "ng>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전 관리 계획</string>\r\n  <string" +
-            ">문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/" +
-            "안전/환경 &gt; 품질관리 &gt; 품질관리계획</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 품질관리 " +
-            "&gt; 품질자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 콘텐츠 관리 계약 문서" +
-            "</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 폐기물 관리</string>\r\n  <st" +
-            "ring>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경 관리 계획</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경자료실</string>\r\n</ArrayOfString>")]
+            "tring>Document &amp; Drawing</string>\r\n  <string>Document &amp; Drawing &gt; Con" +
+            "struction Management &gt; Construction daily report</string>\r\n  <string>Document" +
+            " &amp; Drawing &gt; Construction Management &gt; Main process photo</string>\r\n  " +
+            "<string>Document &amp; Drawing &gt; Construction Management &gt; Main process ph" +
+            "oto &gt; 건축</string>\r\n  <string>Document &amp; Drawing &gt; Construction Managem" +
+            "ent &gt; Main process photo &gt; 소방</string>\r\n  <string>Document &amp; Drawing &" +
+            "gt; Construction Management &gt; Main process photo &gt; 전기</string>\r\n  <string>" +
+            "Document &amp; Drawing &gt; Construction Management &gt; Main process photo &gt;" +
+            " 통신</string>\r\n  <string>Document &amp; Drawing &gt; Construction Management &gt;" +
+            " Supervision work report</string>\r\n  <string>Document &amp; Drawing &gt; Enginee" +
+            "ring Management &gt; Drawing</string>\r\n  <string>Document &amp; Drawing &gt; Eng" +
+            "ineering Management &gt; Drawing &gt; Construction drawing</string>\r\n  <string>D" +
+            "ocument &amp; Drawing &gt; Engineering Management &gt; Drawing &gt; Construction" +
+            " drawing &gt; 01 건축(Architecture)</string>\r\n  <string>Document &amp; Drawing &gt" +
+            "; Engineering Management &gt; Drawing &gt; Construction drawing &gt; 01 건축(Archi" +
+            "tecture) &gt; DOC</string>\r\n  <string>Document &amp; Drawing &gt; Engineering Ma" +
+            "nagement &gt; Drawing &gt; Construction drawing &gt; 01 건축(Architecture) &gt; DW" +
+            "G</string>\r\n  <string>Document &amp; Drawing &gt; Engineering Management &gt; Dr" +
+            "awing &gt; Construction drawing &gt; 02 구조(Structure) &gt; DOC</string>\r\n  <stri" +
+            "ng>Document &amp; Drawing &gt; Engineering Management &gt; Drawing &gt; Construc" +
+            "tion drawing &gt; 02 구조(Structure) &gt; DWG</string>\r\n  <string>Document &amp; D" +
+            "rawing &gt; Engineering Management &gt; Drawing &gt; Construction drawing &gt; 0" +
+            "3 기계(Mechanical)</string>\r\n  <string>Document &amp; Drawing &gt; Engineering Man" +
+            "agement &gt; Drawing &gt; Construction drawing &gt; 05 통신(communication) &gt; DO" +
+            "C</string>\r\n  <string>Document &amp; Drawing &gt; Engineering Management &gt; Dr" +
+            "awing &gt; Construction drawing &gt; 05 통신(communication) &gt; DWG</string>\r\n  <" +
+            "string>Document &amp; Drawing &gt; Engineering Management &gt; Drawing &gt; Cons" +
+            "truction drawing &gt; 06 소방(Fire)</string>\r\n  <string>Document &amp; Drawing &gt" +
+            "; Engineering Management &gt; Drawing &gt; Contract design drawing/doc.</string>" +
+            "\r\n  <string>Document &amp; Drawing &gt; Quality/Safety/Env. &gt; Quality &gt; Co" +
+            "ncrete Test Plan</string>\r\n  <string>Document &amp; Drawing &gt; Quality/Safety/" +
+            "Env. &gt; Quality &gt; Quality Management Plan</string>\r\n  <string>Document &amp" +
+            "; Drawing &gt; Quality/Safety/Env. &gt; 주요자재검사및수불부</string>\r\n  <string>Document " +
+            "&amp; Drawing &gt; Quality/Safety/Env. &gt; 주요자재검사및수불부 &gt; 건축</string>\r\n  <stri" +
+            "ng>Official Documents &gt; 문서작성(신규) &gt; 검측요청서(Inspection Request)</string>\r\n  <" +
+            "string>Official Documents &gt; 문서작성(신규) &gt; 검측요청서(Inspection Request) &gt; 건축</" +
+            "string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt; 검측요청서(Inspection Reques" +
+            "t) &gt; 소방</string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt; 검측요청서(Inspe" +
+            "ction Request) &gt; 전기</string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt;" +
+            " 검측요청서(Inspection Request) &gt; 통신</string>\r\n  <string>Official Documents &gt; 문" +
+            "서작성(신규) &gt; 공문</string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt; 시공상세도 " +
+            "승인요청서 (Shop Drawing) &gt; 건축</string>\r\n  <string>Official Documents &gt; 문서작성(신규" +
+            ") &gt; 시공상세도 승인요청서 (Shop Drawing) &gt; 소방</string>\r\n  <string>Official Documents" +
+            " &gt; 문서작성(신규) &gt; 시공상세도 승인요청서 (Shop Drawing) &gt; 통신</string>\r\n  <string>Offic" +
+            "ial Documents &gt; 문서작성(신규) &gt; 자재검수요청서(Material Inspection Request)</string>\r\n" +
+            "  <string>Official Documents &gt; 문서작성(신규) &gt; 자재검수요청서(Material Inspection Requ" +
+            "est) &gt; 건축</string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt; 자재검수요청서(M" +
+            "aterial Inspection Request) &gt; 소방</string>\r\n  <string>Official Documents &gt; " +
+            "문서작성(신규) &gt; 자재검수요청서(Material Inspection Request) &gt; 전기</string>\r\n  <string>O" +
+            "fficial Documents &gt; 문서작성(신규) &gt; 자재검수요청서(Material Inspection Request) &gt; 통" +
+            "신</string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt; 자재공급원승인요청서(Vendor Ap" +
+            "proval) &gt; 건축</string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt; 자재공급원승" +
+            "인요청서(Vendor Approval) &gt; 소방</string>\r\n  <string>Official Documents &gt; 문서작성(신" +
+            "규) &gt; 자재공급원승인요청서(Vendor Approval) &gt; 전기</string>\r\n  <string>Official Documen" +
+            "ts &gt; 문서작성(신규) &gt; 자재공급원승인요청서(Vendor Approval) &gt; 통신</string>\r\n  <string>Of" +
+            "ficial Documents &gt; 문서작성(신규) &gt; 자재승인요청서(Transmittal for Approval)</string>\r\n" +
+            "  <string>Official Documents &gt; 문서작성(신규) &gt; 자재승인요청서(Transmittal for Approval" +
+            ") &gt; 건축</string>\r\n  <string>Official Documents &gt; 문서작성(신규) &gt; 자재승인요청서(Tran" +
+            "smittal for Approval) &gt; 소방</string>\r\n  <string>Official Documents &gt; 문서작성(신" +
+            "규) &gt; 작업지시서(Field Instruction) &gt; 건축</string>\r\n  <string>PMIS Data Managemen" +
+            "t &gt; E-Book Management &gt; Project Status &gt; Promotional materials</string>" +
+            "\r\n  <string>PMIS Data Management &gt; 발주청공문서</string>\r\n  <string>PMIS Data Manag" +
+            "ement &gt; 착공계</string>\r\n  <string>Report &gt; CM Weekly Report</string>\r\n  <str" +
+            "ing>Report &gt; CM문서_이전자료</string>\r\n  <string>협업관리 &gt; 회의록 &gt; 주간공정회의</string>" +
+            "\r\n  <string>협업관리 &gt; 회의록 &gt; 주간설계회의</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_type {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["register_type"]));
