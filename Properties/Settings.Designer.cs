@@ -25,7 +25,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://pmis.sangah.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://sja.kspmis.com")]
         public string pmis_api_url {
             get {
                 return ((string)(this["pmis_api_url"]));
@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("GLB_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("SJA_PMIS")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -196,7 +196,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/archive.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/sja.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));
