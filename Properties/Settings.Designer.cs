@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("GLB_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("YNPOWER")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -63,16 +63,32 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>공통</string>
+  <string>일반</string>
   <string>건축</string>
-  <string>기계</string>
+  <string>구조</string>
   <string>토목</string>
   <string>조경</string>
+  <string>기계</string>
   <string>전기</string>
   <string>통신</string>
-  <string>기타</string>
   <string>소방</string>
-  <string>관급자재</string>
+  <string>Other</string>
+  <string>계측</string>
+  <string>M</string>
+  <string>P</string>
+  <string>F</string>
+  <string>H</string>
+  <string>R</string>
+  <string>J</string>
+  <string>E</string>
+  <string>C</string>
+  <string>A</string>
+  <string>S</string>
+  <string>Q</string>
+  <string>X</string>
+  <string>T</string>
+  <string>V</string>
+  <string>공통</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_discipline {
             get {
@@ -87,10 +103,15 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>승인용</string>
+  <string>정보용</string>
   <string>공사용</string>
-  <string>최종용</string>
-  <string>참고용</string>
+  <string>승인용</string>
+  <string>폐기</string>
+  <string>완료</string>
+  <string>임시</string>
+  <string>승인</string>
+  <string>정보</string>
+  <string>검토</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_status {
             get {
@@ -105,34 +126,54 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>공문서 &gt; 문서송부전</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &g" +
-            "t; CM-설계 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; C" +
-            "M-시공 &gt; CM</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; CM-시공" +
-            " &gt; 시공</string>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 가설공사</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; CM</string" +
-            ">\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 가설건물공사</strin" +
-            "g>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 발주처</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 전력비</string>\r\n" +
-            "  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 준공도서작성비</string>" +
-            "\r\n  <string>문서 및 도면 &gt; co-operation &gt; 공문서관리 &gt; 발주처-CM &gt; 지급자재현장관리비</str" +
-            "ing>\r\n  <string>문서 및 도면 &gt; co-operation &gt; 회의자료</string>\r\n  <string>문서 및 도면 " +
-            "&gt; 사업비/계약 &gt; 기성자료실</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; VE자료실</string>" +
-            "\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 도면 &gt; 기본도면/도서</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 설계관리 &gt; 도면 &gt; 시공도면/도서</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &g" +
-            "t; 설계단계 CM 월간보고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 일일보" +
-            "고</string>\r\n  <string>문서 및 도면 &gt; 설계관리 &gt; 설계보고 &gt; 설계단계 CM 주간보고</string>\r\n  " +
-            "<string>문서 및 도면 &gt; 시공관리 &gt; 감리/CM일지</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt" +
-            "; 감리월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 감리주간보고</string>\r\n  <string>문" +
-            "서 및 도면 &gt; 시공관리 &gt; 시공월간보고</string>\r\n  <string>문서 및 도면 &gt; 시공관리 &gt; 시공일일보고</" +
-            "string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검수요청서</st" +
-            "ring>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; Material Inspection &gt; 검측요청서</stri" +
-            "ng>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전 관리 계획</string>\r\n  <string" +
-            ">문서 및 도면 &gt; 품질/안전/환경 &gt; 안전관리 &gt; 안전자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/" +
-            "안전/환경 &gt; 품질관리 &gt; 품질관리계획</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 품질관리 " +
-            "&gt; 품질자료실</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 콘텐츠 관리 계약 문서" +
-            "</string>\r\n  <string>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 폐기물 관리</string>\r\n  <st" +
-            "ring>문서 및 도면 &gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경 관리 계획</string>\r\n  <string>문서 및 도면 &" +
-            "gt; 품질/안전/환경 &gt; 환경관리 &gt; 환경자료실</string>\r\n</ArrayOfString>")]
+            "tring>Document &amp; Drawing &gt; Commissioning Management &gt; 시운전 Report</stri" +
+            "ng>\r\n  <string>Document &amp; Drawing &gt; Commissioning Management &gt; 시운전공정</" +
+            "string>\r\n  <string>Document &amp; Drawing &gt; Commissioning Management &gt; 시운전" +
+            "미비사항</string>\r\n  <string>Document &amp; Drawing &gt; Commissioning Management &g" +
+            "t; 시운전표</string>\r\n  <string>Document &amp; Drawing &gt; Construction Management " +
+            "&gt; Construction daily report</string>\r\n  <string>PMIS Data Management &gt; Dat" +
+            "a Management(영남화력) &gt; 공급자 송부전</string>\r\n  <string>PMIS Data Management &gt; Da" +
+            "ta Management(영남화력) &gt; 공급자 송부전 &gt; 6BOP</string>\r\n  <string>PMIS Data Managem" +
+            "ent &gt; Data Management(영남화력) &gt; 공급자 송부전 &gt; MHPS</string>\r\n  <string>PMIS D" +
+            "ata Management &gt; Data Management(영남화력) &gt; 공급자 송부전 &gt; 대우건설</string>\r\n  <st" +
+            "ring>PMIS Data Management &gt; Data Management(영남화력) &gt; 공급자 송부전 &gt; 포스코건설</st" +
+            "ring>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 기타자료실</str" +
+            "ing>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 기타자료실 &gt; " +
+            "발주처 자료</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; " +
+            "안전자료실</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 안" +
+            "전지적서</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료" +
+            "관리 &gt; A/E자료실</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화" +
+            "력) &gt; 자료관리 &gt; A/E자료실 &gt; A/E문서</string>\r\n  <string>PMIS Data Management &gt" +
+            "; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 6.9kv 고압차단기반(SWGR)</str" +
+            "ing>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공" +
+            "급자자료실(보조기기) &gt; 6.9kv 고압차단기반(SWGR) &gt; 비츠로 테크</string>\r\n  <string>PMIS Data Ma" +
+            "nagement &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; ECMS(전기설비 감" +
+            "시 제어반) &gt; 회송송부전</string>\r\n  <string>PMIS Data Management &gt; Data Management(" +
+            "영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; ECMS(전기설비 감시 제어반) &gt; 효성</string>\r\n  <st" +
+            "ring>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기)" +
+            " &gt; 수폐수처리설비</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력" +
+            ") &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 수폐수처리설비 &gt; 휴비스워터</string>\r\n  <string>PMIS D" +
+            "ata Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 영남복합 " +
+            "순환수펌프 구매</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt" +
+            "; 자료관리 &gt; 공급자자료실(보조기기) &gt; 영남복합 순환수펌프 구매 &gt; 신신기계</string>\r\n  <string>PMIS D" +
+            "ata Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 영남천연가" +
+            "스 발전소 건설 크레인 구매 &gt; 고려호이스트</string>\r\n  <string>PMIS Data Management &gt; Data M" +
+            "anagement(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 전력용변압기</string>\r\n  <string>PMIS" +
+            " Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 전력용" +
+            "변압기 &gt; 회송송부전</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화" +
+            "력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 전력용변압기 &gt; 효성</string>\r\n  <string>PMIS Data" +
+            " Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(주기기)</string>\r\n  <s" +
+            "tring>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(주기기)" +
+            " &gt; MHPS</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &" +
+            "gt; 자료관리 &gt; 공급자자료실(주기기) &gt; 대우건설</string>\r\n  <string>PMIS Data Management &gt" +
+            "; Data Management(영남화력) &gt; 자료관리 &gt; 지입자재</string>\r\n  <string>PMIS Data Manage" +
+            "ment &gt; Data Management(영남화력) &gt; 자료관리 &gt; 지입자재 &gt; 기계</string>\r\n  <string>" +
+            "PMIS Data Management &gt; Data Management(영남화력) &gt; 품질자료실</string>\r\n  <string>P" +
+            "MIS Data Management &gt; Data Management(영남화력) &gt; 품질자료실 &gt; 품질협의체</string>\r\n " +
+            " <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 품질절차서 &gt; 절차서 &gt" +
+            "; 안전절차서</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt;" +
+            " 품질절차서 &gt; 절차서 &gt; 작업절차서</string>\r\n  <string>PMIS Data Management &gt; Data Ma" +
+            "nagement(영남화력) &gt; 품질절차서 &gt; 절차서 &gt; 품질절차서</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_type {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["register_type"]));
@@ -156,7 +197,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/archive.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/ypower.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));

@@ -6,7 +6,7 @@
       <Value Profile="(Default)">https://pmis.sangah.com</Value>
     </Setting>
     <Setting Name="pmis_project_code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">GLB_PMIS</Value>
+      <Value Profile="(Default)">YNPOWER</Value>
     </Setting>
     <Setting Name="pmis_auth_key" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -14,71 +14,96 @@
     <Setting Name="register_discipline" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;공통&lt;/string&gt;
+  &lt;string&gt;일반&lt;/string&gt;
   &lt;string&gt;건축&lt;/string&gt;
-  &lt;string&gt;기계&lt;/string&gt;
+  &lt;string&gt;구조&lt;/string&gt;
   &lt;string&gt;토목&lt;/string&gt;
   &lt;string&gt;조경&lt;/string&gt;
+  &lt;string&gt;기계&lt;/string&gt;
   &lt;string&gt;전기&lt;/string&gt;
   &lt;string&gt;통신&lt;/string&gt;
-  &lt;string&gt;기타&lt;/string&gt;
   &lt;string&gt;소방&lt;/string&gt;
-  &lt;string&gt;관급자재&lt;/string&gt;
+  &lt;string&gt;Other&lt;/string&gt;
+  &lt;string&gt;계측&lt;/string&gt;
+  &lt;string&gt;M&lt;/string&gt;
+  &lt;string&gt;P&lt;/string&gt;
+  &lt;string&gt;F&lt;/string&gt;
+  &lt;string&gt;H&lt;/string&gt;
+  &lt;string&gt;R&lt;/string&gt;
+  &lt;string&gt;J&lt;/string&gt;
+  &lt;string&gt;E&lt;/string&gt;
+  &lt;string&gt;C&lt;/string&gt;
+  &lt;string&gt;A&lt;/string&gt;
+  &lt;string&gt;S&lt;/string&gt;
+  &lt;string&gt;Q&lt;/string&gt;
+  &lt;string&gt;X&lt;/string&gt;
+  &lt;string&gt;T&lt;/string&gt;
+  &lt;string&gt;V&lt;/string&gt;
+  &lt;string&gt;공통&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="register_status" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;승인용&lt;/string&gt;
+  &lt;string&gt;정보용&lt;/string&gt;
   &lt;string&gt;공사용&lt;/string&gt;
-  &lt;string&gt;최종용&lt;/string&gt;
-  &lt;string&gt;참고용&lt;/string&gt;
+  &lt;string&gt;승인용&lt;/string&gt;
+  &lt;string&gt;폐기&lt;/string&gt;
+  &lt;string&gt;완료&lt;/string&gt;
+  &lt;string&gt;임시&lt;/string&gt;
+  &lt;string&gt;승인&lt;/string&gt;
+  &lt;string&gt;정보&lt;/string&gt;
+  &lt;string&gt;검토&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="register_type" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;공문서 &amp;gt; 문서송부전&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; CM-설계 &amp;gt; CM&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; CM-시공 &amp;gt; CM&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; CM-시공 &amp;gt; 시공&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; 가설공사&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; 발주처-CM &amp;gt; CM&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; 발주처-CM &amp;gt; 가설건물공사&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; 발주처-CM &amp;gt; 발주처&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; 발주처-CM &amp;gt; 전력비&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; 발주처-CM &amp;gt; 준공도서작성비&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 공문서관리 &amp;gt; 발주처-CM &amp;gt; 지급자재현장관리비&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; co-operation &amp;gt; 회의자료&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 사업비/계약 &amp;gt; 기성자료실&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 설계관리 &amp;gt; VE자료실&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 설계관리 &amp;gt; 도면 &amp;gt; 기본도면/도서&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 설계관리 &amp;gt; 도면 &amp;gt; 시공도면/도서&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 설계관리 &amp;gt; 설계보고 &amp;gt; 설계단계 CM 월간보고&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 설계관리 &amp;gt; 설계보고 &amp;gt; 설계단계 CM 일일보고&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 설계관리 &amp;gt; 설계보고 &amp;gt; 설계단계 CM 주간보고&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 시공관리 &amp;gt; 감리/CM일지&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 시공관리 &amp;gt; 감리월간보고&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 시공관리 &amp;gt; 감리주간보고&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 시공관리 &amp;gt; 시공월간보고&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 시공관리 &amp;gt; 시공일일보고&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; Material Inspection &amp;gt; 검수요청서&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; Material Inspection &amp;gt; 검측요청서&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 안전관리 &amp;gt; 안전 관리 계획&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 안전관리 &amp;gt; 안전자료실&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 품질관리 &amp;gt; 품질관리계획&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 품질관리 &amp;gt; 품질자료실&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 환경관리 &amp;gt; 콘텐츠 관리 계약 문서&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 환경관리 &amp;gt; 폐기물 관리&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 환경관리 &amp;gt; 환경 관리 계획&lt;/string&gt;
-  &lt;string&gt;문서 및 도면 &amp;gt; 품질/안전/환경 &amp;gt; 환경관리 &amp;gt; 환경자료실&lt;/string&gt;
+  &lt;string&gt;Document &amp;amp; Drawing &amp;gt; Commissioning Management &amp;gt; 시운전 Report&lt;/string&gt;
+  &lt;string&gt;Document &amp;amp; Drawing &amp;gt; Commissioning Management &amp;gt; 시운전공정&lt;/string&gt;
+  &lt;string&gt;Document &amp;amp; Drawing &amp;gt; Commissioning Management &amp;gt; 시운전미비사항&lt;/string&gt;
+  &lt;string&gt;Document &amp;amp; Drawing &amp;gt; Commissioning Management &amp;gt; 시운전표&lt;/string&gt;
+  &lt;string&gt;Document &amp;amp; Drawing &amp;gt; Construction Management &amp;gt; Construction daily report&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 공급자 송부전&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 공급자 송부전 &amp;gt; 6BOP&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 공급자 송부전 &amp;gt; MHPS&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 공급자 송부전 &amp;gt; 대우건설&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 공급자 송부전 &amp;gt; 포스코건설&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 기타자료실&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 기타자료실 &amp;gt; 발주처 자료&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 안전자료실&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 안전지적서&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; A/E자료실&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; A/E자료실 &amp;gt; A/E문서&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 6.9kv 고압차단기반(SWGR)&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 6.9kv 고압차단기반(SWGR) &amp;gt; 비츠로 테크&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; ECMS(전기설비 감시 제어반) &amp;gt; 회송송부전&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; ECMS(전기설비 감시 제어반) &amp;gt; 효성&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 수폐수처리설비&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 수폐수처리설비 &amp;gt; 휴비스워터&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 영남복합 순환수펌프 구매&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 영남복합 순환수펌프 구매 &amp;gt; 신신기계&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 영남천연가스 발전소 건설 크레인 구매 &amp;gt; 고려호이스트&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 전력용변압기&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 전력용변압기 &amp;gt; 회송송부전&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(보조기기) &amp;gt; 전력용변압기 &amp;gt; 효성&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(주기기)&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(주기기) &amp;gt; MHPS&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 공급자자료실(주기기) &amp;gt; 대우건설&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 지입자재&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 자료관리 &amp;gt; 지입자재 &amp;gt; 기계&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 품질자료실&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 품질자료실 &amp;gt; 품질협의체&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 품질절차서 &amp;gt; 절차서 &amp;gt; 안전절차서&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 품질절차서 &amp;gt; 절차서 &amp;gt; 작업절차서&lt;/string&gt;
+  &lt;string&gt;PMIS Data Management &amp;gt; Data Management(영남화력) &amp;gt; 품질절차서 &amp;gt; 절차서 &amp;gt; 품질절차서&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="register_folder_uri" Type="System.String" Scope="User">
       <Value Profile="(Default)">register</Value>
     </Setting>
     <Setting Name="sqlite_db_location" Type="System.String" Scope="User">
-      <Value Profile="(Default)">data/archive.db</Value>
+      <Value Profile="(Default)">data/ypower.db</Value>
     </Setting>
     <Setting Name="db_type" Type="System.String" Scope="User">
       <Value Profile="(Default)">sqlite</Value>
