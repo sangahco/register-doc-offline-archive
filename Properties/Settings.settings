@@ -150,7 +150,7 @@
       <Value Profile="(Default)">register</Value>
     </Setting>
     <Setting Name="sqlite_db_location" Type="System.String" Scope="User">
-      <Value Profile="(Default)">data/dp2.db</Value>
+      <Value Profile="(Default)">data/dp2_v2.db</Value>
     </Setting>
     <Setting Name="db_type" Type="System.String" Scope="User">
       <Value Profile="(Default)">sqlite</Value>
