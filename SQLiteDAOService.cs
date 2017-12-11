@@ -1,4 +1,5 @@
-﻿using pmis.register;
+﻿using pmis.clss;
+using pmis.register;
 using pmis.reviewinfo;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace pmis
 {
-    public class SQLiteDaoService : IDbConnection, IRegisterDocumentDao, IReviewInfoDao
+    public class SQLiteDaoService : IDbConnection, IRegisterDocumentDao, IReviewInfoDao, IClssDao
     {
         private static string projectFolder = AppDomain.CurrentDomain.BaseDirectory;
 
@@ -41,14 +42,14 @@ namespace pmis
             DatabaseFilePath = databaseFilePath;
         }
 
-        private SQLiteConnection InitDB()
+        private SQLiteConnection InitDB(bool forceNew=false)
         {
             LogUtil.Log("Connecting database...");
             //ConfigureDatabasePath();
 
             string connectionString = string.Format("Data Source={0};Version=3;", databaseFilePath);
 
-            if (!File.Exists(databaseFilePath))
+            if (!File.Exists(databaseFilePath) || forceNew)
             {
                 LogUtil.Log(String.Format("Creating new database... {0}", connectionString));
                 SQLiteConnection.CreateFile(databaseFilePath);
@@ -79,10 +80,10 @@ namespace pmis
             return m_dbConnection;
         }
 
-        public void Open()
+        public void Open(bool forceNew=false)
         {
             Close();
-            InitDB();
+            InitDB(forceNew);
         }
 
         public void Close()
@@ -118,7 +119,7 @@ namespace pmis
         public void ImportDocumentData(RegisterDocument d)
         {
             string filepath = Path.Combine(projectFolder, @"register.import.sqlite.sql");
-            string sql = File.ReadAllText(@"register.import.sqlite.sql");
+            string sql = File.ReadAllText(filepath);
 
             SQLiteCommand cmd = new SQLiteCommand(sql, m_dbConnection);
             cmd.Parameters.AddWithValue("@docno", d.DocumentNumber);
@@ -136,6 +137,7 @@ namespace pmis
             cmd.Parameters.AddWithValue("@descr", d.Note);
             cmd.Parameters.AddWithValue("@type", d.Type);
             cmd.Parameters.AddWithValue("@current", d.Current);
+            cmd.Parameters.AddWithValue("@internal_codes", d.InternalCodes);
 
             cmd.ExecuteNonQuery();
             cmd.Dispose();
@@ -222,7 +224,7 @@ namespace pmis
                 sql += " AND discipline = @discipline ";
 
             if (criteria.ContainsKey("type"))
-                sql += " AND doc_type = @type ";
+                sql += " AND internal_codes like '#'||@type||'%' ";
 
             if (criteria.ContainsKey("registered_by"))
                 sql += " AND registered_by = @registered_by ";
@@ -375,6 +377,55 @@ namespace pmis
 
             }
             return count;
+        }
+
+        public void UpdateClassificationData(Classification clss)
+        {
+            string filepath = Path.Combine(projectFolder, @"clss/clss.import.sqlite.sql");
+            string sql = File.ReadAllText(filepath);
+
+            SQLiteCommand cmd = new SQLiteCommand(sql, m_dbConnection);
+            cmd.Parameters.AddWithValue("@name", clss.Name);
+            cmd.Parameters.AddWithValue("@level", clss.Level);
+            cmd.Parameters.AddWithValue("@code", clss.Code);
+
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+        }
+
+        public DataTable LoadClassificationList(int level, string upcode=null)
+        {
+            string filepath = Path.Combine(projectFolder, @"clss/clss.load.sqlite.sql");
+            string sql = File.ReadAllText(filepath);
+            if (level != 0)
+                sql += " AND level = @level ";
+            if (upcode != null)
+                sql += " AND code like @code||'%' ";
+
+            DataTable dt = new DataTable();
+            using (var cmd = new SQLiteCommand(sql, m_dbConnection))
+            {
+                cmd.Parameters.AddWithValue("@level", level);
+                if (upcode != null)
+                    cmd.Parameters.AddWithValue("@code", upcode == "" ? "-" : upcode);
+
+                SQLiteDataAdapter da = new SQLiteDataAdapter();
+                da.SelectCommand = cmd;
+                da.Fill(dt);
+                LogUtil.Log("Loaded clss items " + dt.Rows.Count);
+            }
+
+            return dt;
+        }
+
+        public void DeleteClassificationData()
+        {
+            // delete all clss first
+            string filepath = Path.Combine(projectFolder, @"clss/clss.delete.sqlite.sql");
+            string sql = File.ReadAllText(filepath);
+            SQLiteCommand cmd = new SQLiteCommand(sql, m_dbConnection);
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
         }
     }
 }
