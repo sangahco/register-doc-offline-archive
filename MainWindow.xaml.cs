@@ -93,6 +93,24 @@ namespace pmis
             set { srchType.SelectedValue = value; }
         }
 
+        public string SearchCriteriaType2
+        {
+            get { return srchType2.SelectedValue?.ToString(); }
+            set { srchType2.SelectedValue = value; }
+        }
+
+        public string SearchCriteriaType3
+        {
+            get { return srchType3.SelectedValue?.ToString(); }
+            set { srchType3.SelectedValue = value; }
+        }
+
+        public string SearchCriteriaType4
+        {
+            get { return srchType4.SelectedValue?.ToString(); }
+            set { srchType4.SelectedValue = value; }
+        }
+
         public string SearchCriteriaAllHistory { get { return srchHistory.Text; } }
 
         public string SearchCriteriaRegisteredBy {
@@ -248,7 +266,7 @@ namespace pmis
                 Properties.Settings.Default.register_discipline.CopyTo(disciplines, 1);
                 srchDiscipline.ItemsSource = disciplines;
 
-                DataTable dt = clssService.LoadClassificationList();  // load all clss
+                DataTable dt = clssService.LoadClassificationList(1);  // load all clss
                 dt.Rows.InsertAt(dt.NewRow(), 0);  // add a blank option at the bottom
                 srchType.ItemsSource = dt.AsEnumerable();  // change to enumerable type
                 srchType.SelectedIndex = 0;  // select the empty option
@@ -559,6 +577,60 @@ namespace pmis
             else
             {
                 ProfileListMenuItem.IsEnabled = false;
+            }
+        }
+
+        private void srchType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                foreach (DataRow selection in e.AddedItems)
+                {
+                    DataTable dt = clssService.LoadClassificationList(2, selection["code"].ToString());
+                    dt.Rows.InsertAt(dt.NewRow(), 0);
+                    srchType2.ItemsSource = dt.AsEnumerable();
+                    srchType2.SelectedIndex = 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.Log().Display();
+            }
+        }
+
+        private void srchType2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                foreach (DataRow selection in e.AddedItems)
+                {
+                    DataTable dt = clssService.LoadClassificationList(3, selection["code"].ToString());
+                    dt.Rows.InsertAt(dt.NewRow(), 0);
+                    srchType3.ItemsSource = dt.AsEnumerable();
+                    srchType3.SelectedIndex = 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.Log().Display();
+            }
+        }
+
+        private void srchType3_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                foreach (DataRow selection in e.AddedItems)
+                {
+                    DataTable dt = clssService.LoadClassificationList(4, selection["code"].ToString());
+                    dt.Rows.InsertAt(dt.NewRow(), 0);
+                    srchType4.ItemsSource = dt.AsEnumerable();
+                    srchType4.SelectedIndex = 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.Log().Display();
             }
         }
 
