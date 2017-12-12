@@ -34,7 +34,7 @@
     <PublisherName>SangAh</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>54</ApplicationRevision>
+    <ApplicationRevision>58</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -129,6 +129,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppUtil.cs" />
+    <Compile Include="clss\Classification.cs" />
+    <Compile Include="clss\ClssService.cs" />
+    <Compile Include="clss\IClssDao.cs" />
     <Compile Include="i18n\en_US.Designer.cs" />
     <Compile Include="i18n\ko_KR.Designer.cs" />
     <Compile Include="i18n\LanguageSupport.cs" />
@@ -218,6 +221,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Content Include="clss\clss.delete.sqlite.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="clss\clss.load.sqlite.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="i18n\en_US.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -247,8 +256,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="etc\edms_export.py" />
-    <Resource Include="etc\options_queries.txt" />
+    <None Include="etc\edms_export.py" />
+    <None Include="etc\options_queries.txt" />
     <Resource Include="resources\kspmis_logo.png" />
     <Resource Include="resources\sangah-logo-2.png" />
     <Resource Include="resources\sangah-logo.png" />
@@ -264,6 +273,9 @@
     <Resource Include="resources\001-save.png" />
     <Resource Include="resources\002-profile.png" />
     <Resource Include="resources\003-application.png" />
+    <Content Include="clss\clss.import.sqlite.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="x64\SQLite.Interop.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

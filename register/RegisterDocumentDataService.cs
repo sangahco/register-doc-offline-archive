@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Data;
-using System.Net;
 using Newtonsoft.Json;
 using pmis.register;
 using System.Net.Http;
@@ -200,7 +199,7 @@ namespace pmis
                 foreach (RegisterDocument d in docs)
                 {
                     daoService.ImportDocumentData(d);
-                    Console.WriteLine("Adding register data: {0}", d);
+                    //Console.WriteLine("Adding register data: {0}", d);
                     OnRegisterDocumentImported(d);
                 }
             }

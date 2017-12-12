@@ -1,4 +1,4 @@
-﻿using pmis;
+﻿using pmis.clss;
 using pmis.i18n;
 using pmis.profile;
 using pmis.register;
@@ -9,19 +9,11 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace pmis
 {
@@ -37,6 +29,7 @@ namespace pmis
         private RegisterDocumentDetailView registerDocumentDetailView;
         private ReviewInfoPresenter reviewInfoPresenter;
         private ReviewInfoDataService reviewInfoDataService;
+        private ClssService clssService;
         private BindingSource fileManagerBS;
         private BindingSource reviewFilesBS;
         private PicturePresenter picturePresenter;
@@ -96,8 +89,8 @@ namespace pmis
 
         public string SearchCriteriaType
         {
-            get { return srchType.Text; }
-            set { srchType.Text = value; }
+            get { return srchType.SelectedValue?.ToString(); }
+            set { srchType.SelectedValue = value; }
         }
 
         public string SearchCriteriaAllHistory { get { return srchHistory.Text; } }
@@ -173,6 +166,10 @@ namespace pmis
                 reviewDataGridView.AutoGenerateColumns = false;
                 reviewDataGridView.CanUserAddRows = false;
 
+                clssService = new ClssService(daoService as IClssDao);
+                clssService.ImportComplete += LoadSearchOptions;
+                daoService.DatabaseInitialized += UpdateClssData;  // update clss on new db connection
+
                 reviewFilesBS = new BindingSource();
                 reviewFilesBS.DataSource = new List<RegisterFile>();
                 reviewFilesBS.AllowNew = false;
@@ -201,6 +198,7 @@ namespace pmis
                 settingForm.SettingChanged += LoadPictureViewer;
                 settingForm.SettingChanged += LoadLanguage;
                 settingForm.SettingChanged += ShowRegisterList;
+                settingForm.SettingChanged += UpdateClssData;
 
                 ProfileService.ProfileChanged += (profile) =>
                 {
@@ -238,20 +236,27 @@ namespace pmis
 
         private void LoadSearchOptions(object sender = null, EventArgs args = null)
         {
-            string[] statuses = new string[Properties.Settings.Default.register_status.Count + 1];
-            statuses[0] = "";
-            Properties.Settings.Default.register_status.CopyTo(statuses, 1);
-            srchStatus.ItemsSource = statuses;
+            try
+            {
+                string[] statuses = new string[Properties.Settings.Default.register_status.Count + 1];
+                statuses[0] = "";
+                Properties.Settings.Default.register_status.CopyTo(statuses, 1);
+                srchStatus.ItemsSource = statuses;
 
-            string[] disciplines = new string[Properties.Settings.Default.register_discipline.Count + 1];
-            disciplines[0] = "";
-            Properties.Settings.Default.register_discipline.CopyTo(disciplines, 1);
-            srchDiscipline.ItemsSource = disciplines;
+                string[] disciplines = new string[Properties.Settings.Default.register_discipline.Count + 1];
+                disciplines[0] = "";
+                Properties.Settings.Default.register_discipline.CopyTo(disciplines, 1);
+                srchDiscipline.ItemsSource = disciplines;
 
-            string[] types = new string[Properties.Settings.Default.register_type.Count + 1];
-            types[0] = "";
-            Properties.Settings.Default.register_type.CopyTo(types, 1);
-            srchType.ItemsSource = types;
+                DataTable dt = clssService.LoadClassificationList();  // load all clss
+                dt.Rows.InsertAt(dt.NewRow(), 0);  // add a blank option at the bottom
+                srchType.ItemsSource = dt.AsEnumerable();  // change to enumerable type
+                srchType.SelectedIndex = 0;  // select the empty option
+            }
+            catch (Exception ex)
+            {
+                ex.Log().Display();
+            }
         }
 
         private void LoadPictureViewer(object sender = null, EventArgs args = null)
@@ -371,8 +376,15 @@ namespace pmis
 
         private void settingMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            settingForm.Owner = this;
-            settingForm.ShowDialog();
+            try
+            {
+                settingForm.Owner = this;
+                settingForm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                ex.Log().Display();
+            }
         }
 
         private void fileManagerDataGridView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -547,6 +559,18 @@ namespace pmis
             else
             {
                 ProfileListMenuItem.IsEnabled = false;
+            }
+        }
+
+        private async void UpdateClssData(object sender, EventArgs args)
+        {
+            try
+            {
+                await clssService.UpdateClassificationData();
+            }
+            catch (Exception ex)
+            {
+                ex.Log().Display();
             }
         }
     }

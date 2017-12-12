@@ -3,13 +3,8 @@ using pmis.reviewinfo;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SQLite;
 using System.IO;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pmis
 {
@@ -103,7 +98,7 @@ namespace pmis
                 foreach (ReviewInfo d in docs)
                 {
                     _dao.ImportReviewInfoData(d);
-                    Console.WriteLine("Adding review data: {0}", d);
+                    //Console.WriteLine("Adding review data: {0}", d);
                     OnReviewInfoImported(d);
                 }
             }
