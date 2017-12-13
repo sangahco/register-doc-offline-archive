@@ -25,7 +25,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://pmis.sangah.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://y-power.kspmis.com")]
         public string pmis_api_url {
             get {
                 return ((string)(this["pmis_api_url"]));
@@ -126,54 +126,44 @@ namespace pmis.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>Document &amp; Drawing &gt; Commissioning Management &gt; 시운전 Report</stri" +
-            "ng>\r\n  <string>Document &amp; Drawing &gt; Commissioning Management &gt; 시운전공정</" +
-            "string>\r\n  <string>Document &amp; Drawing &gt; Commissioning Management &gt; 시운전" +
-            "미비사항</string>\r\n  <string>Document &amp; Drawing &gt; Commissioning Management &g" +
-            "t; 시운전표</string>\r\n  <string>Document &amp; Drawing &gt; Construction Management " +
-            "&gt; Construction daily report</string>\r\n  <string>PMIS Data Management &gt; Dat" +
-            "a Management(영남화력) &gt; 공급자 송부전</string>\r\n  <string>PMIS Data Management &gt; Da" +
-            "ta Management(영남화력) &gt; 공급자 송부전 &gt; 6BOP</string>\r\n  <string>PMIS Data Managem" +
-            "ent &gt; Data Management(영남화력) &gt; 공급자 송부전 &gt; MHPS</string>\r\n  <string>PMIS D" +
-            "ata Management &gt; Data Management(영남화력) &gt; 공급자 송부전 &gt; 대우건설</string>\r\n  <st" +
-            "ring>PMIS Data Management &gt; Data Management(영남화력) &gt; 공급자 송부전 &gt; 포스코건설</st" +
-            "ring>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 기타자료실</str" +
-            "ing>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 기타자료실 &gt; " +
-            "발주처 자료</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; " +
-            "안전자료실</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 안" +
-            "전지적서</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료" +
-            "관리 &gt; A/E자료실</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화" +
-            "력) &gt; 자료관리 &gt; A/E자료실 &gt; A/E문서</string>\r\n  <string>PMIS Data Management &gt" +
-            "; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 6.9kv 고압차단기반(SWGR)</str" +
-            "ing>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공" +
-            "급자자료실(보조기기) &gt; 6.9kv 고압차단기반(SWGR) &gt; 비츠로 테크</string>\r\n  <string>PMIS Data Ma" +
-            "nagement &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; ECMS(전기설비 감" +
-            "시 제어반) &gt; 회송송부전</string>\r\n  <string>PMIS Data Management &gt; Data Management(" +
-            "영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; ECMS(전기설비 감시 제어반) &gt; 효성</string>\r\n  <st" +
-            "ring>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기)" +
-            " &gt; 수폐수처리설비</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력" +
-            ") &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 수폐수처리설비 &gt; 휴비스워터</string>\r\n  <string>PMIS D" +
-            "ata Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 영남복합 " +
-            "순환수펌프 구매</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt" +
-            "; 자료관리 &gt; 공급자자료실(보조기기) &gt; 영남복합 순환수펌프 구매 &gt; 신신기계</string>\r\n  <string>PMIS D" +
-            "ata Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 영남천연가" +
-            "스 발전소 건설 크레인 구매 &gt; 고려호이스트</string>\r\n  <string>PMIS Data Management &gt; Data M" +
-            "anagement(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 전력용변압기</string>\r\n  <string>PMIS" +
-            " Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 전력용" +
-            "변압기 &gt; 회송송부전</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화" +
-            "력) &gt; 자료관리 &gt; 공급자자료실(보조기기) &gt; 전력용변압기 &gt; 효성</string>\r\n  <string>PMIS Data" +
-            " Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(주기기)</string>\r\n  <s" +
-            "tring>PMIS Data Management &gt; Data Management(영남화력) &gt; 자료관리 &gt; 공급자자료실(주기기)" +
-            " &gt; MHPS</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &" +
-            "gt; 자료관리 &gt; 공급자자료실(주기기) &gt; 대우건설</string>\r\n  <string>PMIS Data Management &gt" +
-            "; Data Management(영남화력) &gt; 자료관리 &gt; 지입자재</string>\r\n  <string>PMIS Data Manage" +
-            "ment &gt; Data Management(영남화력) &gt; 자료관리 &gt; 지입자재 &gt; 기계</string>\r\n  <string>" +
-            "PMIS Data Management &gt; Data Management(영남화력) &gt; 품질자료실</string>\r\n  <string>P" +
-            "MIS Data Management &gt; Data Management(영남화력) &gt; 품질자료실 &gt; 품질협의체</string>\r\n " +
-            " <string>PMIS Data Management &gt; Data Management(영남화력) &gt; 품질절차서 &gt; 절차서 &gt" +
-            "; 안전절차서</string>\r\n  <string>PMIS Data Management &gt; Data Management(영남화력) &gt;" +
-            " 품질절차서 &gt; 절차서 &gt; 작업절차서</string>\r\n  <string>PMIS Data Management &gt; Data Ma" +
-            "nagement(영남화력) &gt; 품질절차서 &gt; 절차서 &gt; 품질절차서</string>\r\n</ArrayOfString>")]
+            "tring>1,Construction Management,000000002000002500</string>\r\n  <string>2,Constru" +
+            "ction daily report,000000002000002500002507</string>\r\n  <string>1,Commissioning " +
+            "Management,000000002000002700</string>\r\n  <string>2,시운전 Report,00000000200000270" +
+            "0019380</string>\r\n  <string>2,시운전표,000000002000002700019381</string>\r\n  <string>" +
+            "2,시운전공정,000000002000002700019382</string>\r\n  <string>2,시운전미비사항,00000000200000270" +
+            "0019384</string>\r\n  <string>1,Data Management(영남화력),000000003000003200</string>\r" +
+            "\n  <string>2,안전지적서,000000003000003200018940</string>\r\n  <string>2,자료관리,000000003" +
+            "000003200019080</string>\r\n  <string>3,A/E자료실,000000003000003200019080018424</str" +
+            "ing>\r\n  <string>4,A/E문서,000000003000003200019080018424018429</string>\r\n  <string" +
+            ">3,공급자자료실(주기기),000000003000003200019080018425</string>\r\n  <string>4,대우건설,0000000" +
+            "03000003200019080018425018431</string>\r\n  <string>4,MHPS,00000000300000320001908" +
+            "0018425018432</string>\r\n  <string>3,공급자자료실(보조기기),000000003000003200019080018426<" +
+            "/string>\r\n  <string>4,영남복합 순환수펌프 구매,000000003000003200019080018426018437</string" +
+            ">\r\n  <string>5,신신기계,000000003000003200019080018426018437018491</string>\r\n  <stri" +
+            "ng>4,수폐수처리설비,000000003000003200019080018426018438</string>\r\n  <string>5,휴비스워터,00" +
+            "0000003000003200019080018426018438018446</string>\r\n  <string>4,영남천연가스 발전소 건설 크레인" +
+            " 구매,000000003000003200019080018426018439</string>\r\n  <string>5,고려호이스트,0000000030" +
+            "00003200019080018426018439018489</string>\r\n  <string>4,전력용변압기,000000003000003200" +
+            "019080018426018440</string>\r\n  <string>5,효성,000000003000003200019080018426018440" +
+            "018504</string>\r\n  <string>5,회송송부전,000000003000003200019080018426018440018505</s" +
+            "tring>\r\n  <string>4,6.9kv 고압차단기반(SWGR),000000003000003200019080018426018441</str" +
+            "ing>\r\n  <string>5,비츠로 테크,000000003000003200019080018426018441019140</string>\r\n  " +
+            "<string>4,ECMS(전기설비 감시 제어반),000000003000003200019080018426018442</string>\r\n  <st" +
+            "ring>5,효성,000000003000003200019080018426018442019141</string>\r\n  <string>5,회송송부전" +
+            ",000000003000003200019080018426018442019142</string>\r\n  <string>3,지입자재,000000003" +
+            "000003200019080018448</string>\r\n  <string>4,기계,000000003000003200019080018448018" +
+            "449</string>\r\n  <string>2,공급자 송부전,000000003000003200019121</string>\r\n  <string>3" +
+            ",대우건설,000000003000003200019121019122</string>\r\n  <string>3,6BOP,0000000030000032" +
+            "00019121019123</string>\r\n  <string>3,포스코건설,000000003000003200019121019124</strin" +
+            "g>\r\n  <string>3,MHPS,000000003000003200019121019293</string>\r\n  <string>2,품질절차서," +
+            "000000003000003200019400</string>\r\n  <string>3,절차서,00000000300000320001940001940" +
+            "1</string>\r\n  <string>4,품질절차서,000000003000003200019400019401019402</string>\r\n  <" +
+            "string>4,안전절차서,000000003000003200019400019401019403</string>\r\n  <string>4,작업절차서," +
+            "000000003000003200019400019401019407</string>\r\n  <string>2,품질자료실,000000003000003" +
+            "200320010</string>\r\n  <string>3,품질협의체,000000003000003200320010019294</string>\r\n " +
+            " <string>2,안전자료실,000000003000003200320020</string>\r\n  <string>2,기타자료실,0000000030" +
+            "00003200320040</string>\r\n  <string>3,발주처 자료,000000003000003200320040018444</stri" +
+            "ng>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection register_type {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["register_type"]));
