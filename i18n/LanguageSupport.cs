@@ -21,7 +21,7 @@ namespace pmis.i18n
             _form.searchDocStatusLabel.Content = AppConfig.i18n.Get("docstatus");
             _form.searchDocTypeLabel.Content = AppConfig.i18n.Get("doctype");
             _form.searchHistoryLabel.Content = AppConfig.i18n.Get("history");
-            _form.searchRegisteredByLabel.Content = AppConfig.i18n.Get("registeredby");
+            //_form.searchRegisteredByLabel.Content = AppConfig.i18n.Get("registeredby");
             _form.searchDocTitleLabel.Content = AppConfig.i18n.Get("doctitle");
             _form.searchDocNumberLabel.Content = AppConfig.i18n.Get("docno");
             _form.searchButton.Content = AppConfig.i18n.Get("search");

@@ -130,13 +130,13 @@
     <value>분야</value>
   </data>
   <data name="docdiscipline" xml:space="preserve">
-    <value>문서분야</value>
+    <value>공종</value>
   </data>
   <data name="docno" xml:space="preserve">
     <value>문서번호</value>
   </data>
   <data name="docstatus" xml:space="preserve">
-    <value>문서상태</value>
+    <value>발행목적</value>
   </data>
   <data name="doctitle" xml:space="preserve">
     <value>문서제목</value>
