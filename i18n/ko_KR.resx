@@ -190,7 +190,7 @@
     <value>설정을 원래 기본값으로 복원한다.</value>
   </data>
   <data name="reviewdetail" xml:space="preserve">
-    <value>결재이력</value>
+    <value>작업일보 결재이력</value>
   </data>
   <data name="reviewstatus" xml:space="preserve">
     <value>검토상태</value>
