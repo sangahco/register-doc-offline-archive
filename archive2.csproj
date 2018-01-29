@@ -287,6 +287,7 @@
     <Content Include="clss\clss.import.sqlite.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="resources\open-book.png" />
     <Content Include="resources\ypower-legend.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

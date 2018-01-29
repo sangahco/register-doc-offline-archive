@@ -71,7 +71,7 @@ namespace pmis.i18n
             _form.pictureViewerTabPage.Header = AppConfig.i18n.Get("picture_viewer");
             _form.pictureDataGridViewFileName.Header = AppConfig.i18n.Get("file_name");
             _form.pictureDataGridViewFileSize.Header = AppConfig.i18n.Get("file_size");
-            _form.legendButton.Content = AppConfig.i18n.Get("legend-window");
+            _form.legendButtonLabel.Text = AppConfig.i18n.Get("legend-window");
         }
 
         public void SetSettingFormLanguage(SettingWindow _form)
