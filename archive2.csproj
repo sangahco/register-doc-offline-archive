@@ -34,7 +34,7 @@
     <PublisherName>SangAh</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>61</ApplicationRevision>
+    <ApplicationRevision>63</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -73,7 +73,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -132,6 +132,7 @@
     <Compile Include="clss\Classification.cs" />
     <Compile Include="clss\ClssService.cs" />
     <Compile Include="clss\IClssDao.cs" />
+    <Compile Include="exception\ApplicationException.cs" />
     <Compile Include="i18n\en_US.Designer.cs" />
     <Compile Include="i18n\ko_KR.Designer.cs" />
     <Compile Include="i18n\LanguageSupport.cs" />
@@ -241,6 +242,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\profile.YNPOWER.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\profile.YNPOWER_일반.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />

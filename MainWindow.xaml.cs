@@ -114,8 +114,8 @@ namespace pmis
         public string SearchCriteriaAllHistory { get { return srchHistory.Text; } }
 
         public string SearchCriteriaRegisteredBy {
-            get { return srchRegisteredBy.Text; }
-            set { srchRegisteredBy.Text = value; }
+            get { return null; }
+            set {  }
         }
 
         public ImageSource ImageBox
