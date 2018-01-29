@@ -1,4 +1,5 @@
 ﻿using pmis;
+using pmis.legendchart;
 using pmis.profile;
 using System;
 using System.Collections.Generic;
@@ -70,6 +71,7 @@ namespace pmis.i18n
             _form.pictureViewerTabPage.Header = AppConfig.i18n.Get("picture_viewer");
             _form.pictureDataGridViewFileName.Header = AppConfig.i18n.Get("file_name");
             _form.pictureDataGridViewFileSize.Header = AppConfig.i18n.Get("file_size");
+            _form.legendButton.Content = AppConfig.i18n.Get("legend-window");
         }
 
         public void SetSettingFormLanguage(SettingWindow _form)
@@ -118,6 +120,11 @@ namespace pmis.i18n
             form.Title = AppConfig.i18n.Get("new_profile");
             form.profileNameLabel.Content = AppConfig.i18n.Get("profile_name");
             form.createProfileCreateButton.Content = AppConfig.i18n.Get("create_profile");
+        }
+
+        public void SetLegendWindowLanguage(LegendViewerWindow window)
+        {
+            window.Title = AppConfig.i18n.Get("legend-window");
         }
     }
 }

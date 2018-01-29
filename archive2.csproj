@@ -136,6 +136,9 @@
     <Compile Include="i18n\en_US.Designer.cs" />
     <Compile Include="i18n\ko_KR.Designer.cs" />
     <Compile Include="i18n\LanguageSupport.cs" />
+    <Compile Include="legendchart\LegendViewerWindow.xaml.cs">
+      <DependentUpon>LegendViewerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="profile\NewProfileWindow.xaml.cs">
       <DependentUpon>NewProfileWindow.xaml</DependentUpon>
     </Compile>
@@ -184,6 +187,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="legendchart\LegendViewerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="profile\NewProfileWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -278,6 +285,9 @@
     <Resource Include="resources\002-profile.png" />
     <Resource Include="resources\003-application.png" />
     <Content Include="clss\clss.import.sqlite.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\ypower-legend.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="x64\SQLite.Interop.dll">

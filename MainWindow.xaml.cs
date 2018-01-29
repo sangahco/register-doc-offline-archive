@@ -1,5 +1,6 @@
 ﻿using pmis.clss;
 using pmis.i18n;
+using pmis.legendchart;
 using pmis.profile;
 using pmis.register;
 using pmis.reviewinfo;
@@ -639,6 +640,20 @@ namespace pmis
             try
             {
                 await clssService.UpdateClassificationData();
+            }
+            catch (Exception ex)
+            {
+                ex.Log().Display();
+            }
+        }
+
+        private void ShowLegendButtonOnClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var pdfViewer = new LegendViewerWindow();
+                pdfViewer.Owner = this;
+                pdfViewer.Show();
             }
             catch (Exception ex)
             {

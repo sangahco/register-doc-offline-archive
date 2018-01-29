@@ -14,7 +14,7 @@
                         <ColumnDefinition Width="111"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid Margin="0,0,0,0" HorizontalAlignment="Left" Width="862" Height="172" VerticalAlignment="Top" Grid.ColumnSpan="2">
+                    <Grid Margin="0,0,0,0" HorizontalAlignment="Left" Width="940" Height="172" VerticalAlignment="Top" Grid.ColumnSpan="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="133"/>
                             <ColumnDefinition Width="192"/>
@@ -38,6 +38,7 @@
                         <ComboBox x:Name="srchHistory" Margin="5.2,111,9.8,0" VerticalAlignment="Top" Grid.Column="3"/>
                         <Button x:Name="searchButton" Content="Search" Margin="18.2,69,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Width="104" Height="36" VerticalAlignment="Top"/>
                         <Button x:Name="searchClearButton" Content="Clear" Margin="18.2,110,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1"/>
+                        <Button x:Name="legendButton" Content="Legend" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="4" Margin="18.2,139,0,0" Height="23" Padding="10,1" Click="ShowLegendButtonOnClick"/>
                     </Grid>
                     <DataGrid x:Name="registerDataGridView" Margin="0,177,0.2,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="30" HorizontalGridLinesBrush="Gray" VerticalGridLinesBrush="Gray" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" Grid.ColumnSpan="2">
                         <DataGrid.Columns>

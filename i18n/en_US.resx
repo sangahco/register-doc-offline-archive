@@ -282,4 +282,7 @@
   <data name="clss_format_invalid" xml:space="preserve">
     <value>The classification format is not valid, cannot be saved.</value>
   </data>
+  <data name="legend-window" xml:space="preserve">
+    <value>Equipment Classification Code Chart</value>
+  </data>
 </root>
