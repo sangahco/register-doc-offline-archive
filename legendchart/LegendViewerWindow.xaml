@@ -6,11 +6,16 @@
         xmlns:local="clr-namespace:pmis.legendchart"
         mc:Ignorable="d"
         Title="ViewerWindow" Height="550" WindowStartupLocation="CenterOwner" ShowInTaskbar="True" d:DesignWidth="1156.8" Width="1150" MinWidth="900" MinHeight="500" Icon="/archive;component/resources/sangah_logo_16.ico">
-    <Grid Margin="0,0,0,-0.2">
-        <ScrollViewer >
-            <Border BorderBrush="#FF767676" BorderThickness="1" Grid.Column="1" >
+    <Grid Margin="4,0,4,-3.4">
+        <Border BorderBrush="#FF767676" BorderThickness="1" Margin="0,0,0,50.2" >
+            <ScrollViewer Margin="0.2,0.2,0.2,-0.6" >
                 <Image x:Name="pictureBox1" />
-            </Border>
-        </ScrollViewer>
+            </ScrollViewer>
+        </Border>
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="10,0,0,14.2" Width="410" Height="31" VerticalAlignment="Bottom">
+            <Button x:Name="picturePreviousButton" Content="&lt; Previous" HorizontalAlignment="Left" Margin="0,0,10,0" Height="22" VerticalAlignment="Center" Padding="10,1" Width="90" VerticalContentAlignment="Center" Click="picturePreviousButton_Click"/>
+            <Button x:Name="pictureNextButton" Content="Next &gt;" HorizontalAlignment="Right" Margin="0,0,10,0" Width="75" Height="22" VerticalAlignment="Center" Padding="10,1" Click="pictureNextButton_Click"/>
+            <Label x:Name="imageName" Content="Label" VerticalAlignment="Center" FontWeight="Bold"/>
+        </DockPanel>
     </Grid>
 </Window>
