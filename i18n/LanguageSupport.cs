@@ -71,6 +71,8 @@ namespace pmis.i18n
             _form.pictureViewerTabPage.Header = AppConfig.i18n.Get("picture_viewer");
             _form.pictureDataGridViewFileName.Header = AppConfig.i18n.Get("file_name");
             _form.pictureDataGridViewFileSize.Header = AppConfig.i18n.Get("file_size");
+            _form.picturePreviousButton.Content = AppConfig.i18n.Get("previous_image");
+            _form.pictureNextButton.Content = AppConfig.i18n.Get("next_image");
             _form.legendButtonLabel.Text = AppConfig.i18n.Get("legend-window");
         }
 
