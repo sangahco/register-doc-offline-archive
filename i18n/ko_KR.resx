@@ -288,7 +288,7 @@
   <data name="previous_image" xml:space="preserve">
     <value>이전</value>
   </data>
-  <data name="legend-window" xml:space="preserve">
+  <data name="legend_window" xml:space="preserve">
     <value>설비분류코드 조견표</value>
   </data>
 </root>

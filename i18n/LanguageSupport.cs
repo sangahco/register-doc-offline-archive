@@ -73,7 +73,7 @@ namespace pmis.i18n
             _form.pictureDataGridViewFileSize.Header = AppConfig.i18n.Get("file_size");
             _form.picturePreviousButton.Content = AppConfig.i18n.Get("previous_image");
             _form.pictureNextButton.Content = AppConfig.i18n.Get("next_image");
-            _form.legendButtonLabel.Text = AppConfig.i18n.Get("legend-window");
+            _form.legendButtonLabel.Text = AppConfig.i18n.Get("legend_window");
         }
 
         public void SetSettingFormLanguage(SettingWindow _form)
@@ -126,9 +126,9 @@ namespace pmis.i18n
 
         public void SetLegendWindowLanguage(LegendViewerWindow window)
         {
-            window.Title = AppConfig.i18n.Get("legend-window");
-            window.picturePreviousButton.Content = AppConfig.i18n.Get("previous-image");
-            window.pictureNextButton.Content = AppConfig.i18n.Get("next-image");
+            window.Title = AppConfig.i18n.Get("legend_window");
+            window.picturePreviousButton.Content = AppConfig.i18n.Get("previous_image");
+            window.pictureNextButton.Content = AppConfig.i18n.Get("next_image");
         }
     }
 }
