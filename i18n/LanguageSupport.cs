@@ -125,6 +125,8 @@ namespace pmis.i18n
         public void SetLegendWindowLanguage(LegendViewerWindow window)
         {
             window.Title = AppConfig.i18n.Get("legend-window");
+            window.picturePreviousButton.Content = AppConfig.i18n.Get("previous-image");
+            window.pictureNextButton.Content = AppConfig.i18n.Get("next-image");
         }
     }
 }
