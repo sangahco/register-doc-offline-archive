@@ -124,7 +124,7 @@
       <Value Profile="(Default)">pictures</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">default</Value>
+      <Value Profile="(Default)">YNPOWER</Value>
     </Setting>
   </Settings>
 </SettingsFile>
