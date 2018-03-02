@@ -30,11 +30,11 @@
     <InstallUrl>https://dev.sangah.com/pmis-archive/2/ibs1/</InstallUrl>
     <UpdateUrl>https://dev.sangah.com/pmis-archive/2/ibs1/</UpdateUrl>
     <SupportUrl>http://www.sangah.com</SupportUrl>
-    <ProductName>PMIS Offline Archive</ProductName>
+    <ProductName>IBS - PMIS Offline Archive</ProductName>
     <PublisherName>SangAh</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>60</ApplicationRevision>
+    <ApplicationRevision>61</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
