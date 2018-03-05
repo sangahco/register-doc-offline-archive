@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PMIS Offline Archive")]
+[assembly: AssemblyTitle("PMIS Offline Archive for YNPOWER")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SangAh")]
-[assembly: AssemblyProduct("PMIS Offline Archive (dev)")]
+[assembly: AssemblyProduct("PMIS Offline Archive for YNPOWER")]
 [assembly: AssemblyCopyright("Copyright ©SangAh 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
