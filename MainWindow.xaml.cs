@@ -173,7 +173,7 @@ namespace pmis
                 reviewDataGridView.AutoGenerateColumns = false;
                 reviewDataGridView.CanUserAddRows = false;
 
-                archiveDataService = new ArchiveDataService(daoService as IArchiveDataDao);
+                archiveDataService = new ArchiveDataService(new NoArchiveDataDao());
                 ArchivePresenter archivePresenter = new ArchivePresenter(this, archiveDataService);
                 archiveDataGridView.AutoGenerateColumns = false;
                 archiveDataGridView.CanUserAddRows = false;
@@ -233,7 +233,7 @@ namespace pmis
                 // load picture viewer
                 LoadPictureViewer();
 
-                ShowArchiveList();
+                //ShowArchiveList();
 
                 LoadProfileMenuItems();
             }
