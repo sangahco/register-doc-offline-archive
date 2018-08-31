@@ -17,7 +17,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>D:\documents\pmis-archive\</PublishUrl>
+    <PublishUrl>E:\setup\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -32,7 +32,7 @@
     <ProductName>PMIS Offline Archive</ProductName>
     <PublisherName>SangAh</PublisherName>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>62</ApplicationRevision>
+    <ApplicationRevision>64</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
