@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="pmis_api_url" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://pmis.sangah.com</Value>
+      <Value Profile="(Default)">https://hscity.kspmis.com</Value>
     </Setting>
     <Setting Name="pmis_project_code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">GLB_PMIS</Value>
+      <Value Profile="(Default)">DLDMAXJ_PMIS</Value>
     </Setting>
     <Setting Name="pmis_auth_key" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

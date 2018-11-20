@@ -11,7 +11,7 @@ using System.Windows;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SangAh")]
-[assembly: AssemblyProduct("PMIS Offline Archive SNAPSHOT")]
+[assembly: AssemblyProduct("PMIS Offline Archive HSCITY")]
 [assembly: AssemblyCopyright("Copyright ©SangAh 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
