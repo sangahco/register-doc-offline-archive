@@ -65,7 +65,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">default</Value>
+      <Value Profile="(Default)">화성시 커뮤니티 센터</Value>
     </Setting>
   </Settings>
 </SettingsFile>

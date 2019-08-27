@@ -194,7 +194,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("default")]
+        [global::System.Configuration.DefaultSettingValueAttribute("화성시 커뮤니티 센터")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
