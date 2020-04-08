@@ -364,7 +364,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">IKEA_PMIS</Value>
+      <Value Profile="(Default)">이케아 기흥점 신축공사</Value>
     </Setting>
   </Settings>
 </SettingsFile>
