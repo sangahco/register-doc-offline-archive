@@ -309,7 +309,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/dt16pmis.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/DLDMAXJ_PMIS.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));
@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("동탄2신도시 제16초 이음터 건립공사")]
+        [global::System.Configuration.DefaultSettingValueAttribute("화성 동탄(2)제1중학교 이음터신축공")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
