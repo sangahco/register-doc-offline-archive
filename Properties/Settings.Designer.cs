@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("KBITC")]
+        [global::System.Configuration.DefaultSettingValueAttribute("KBHQ")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -309,7 +309,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/kbitc-pmis.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/kbhq.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));
@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("KB국민은행 통합 IT센터 신축공사")]
+        [global::System.Configuration.DefaultSettingValueAttribute("KBHQ")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
