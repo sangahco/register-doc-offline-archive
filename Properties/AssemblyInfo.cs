@@ -11,7 +11,7 @@ using System.Windows;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SangAh")]
-[assembly: AssemblyProduct("PMIS Offline Archive SNAPSHOT")]
+[assembly: AssemblyProduct("PMIS Offline Archive RFCZ")]
 [assembly: AssemblyCopyright("Copyright ©SangAh 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -52,4 +52,4 @@ using System.Windows;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.0.0")]
-[assembly: AssemblyFileVersion("2.2.1")]
+[assembly: AssemblyFileVersion("2.2.0")]
