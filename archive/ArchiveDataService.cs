@@ -56,7 +56,7 @@ namespace pmis.archive
             string registerURI = Properties.Settings.Default.register_folder_uri;
             registerURI = String.IsNullOrEmpty(registerURI) ? "register" : registerURI;
 
-            string targetDirectory = registerURI + "/" + RegisterFile.SanitizeName(archive.Id);
+            string targetDirectory = registerURI + "/archive/" + RegisterFile.SanitizeName(archive.Id);
             string[] files = new string[0];
             try
             {
