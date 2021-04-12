@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PMIS Offline Archive for RFCZ")]
+[assembly: AssemblyTitle("PMIS Offline Archive for A23")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SangAh")]
-[assembly: AssemblyProduct("PMIS Offline Archive RFCZ")]
-[assembly: AssemblyCopyright("Copyright ©SangAh 2017")]
+[assembly: AssemblyProduct("PMIS Offline Archive A23")]
+[assembly: AssemblyCopyright("Copyright ©SangAh 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
