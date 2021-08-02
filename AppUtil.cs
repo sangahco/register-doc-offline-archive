@@ -32,7 +32,7 @@ namespace pmis
             var values = new Dictionary<string, string> {
                 { "user_no", username },
                 { "passwd", pwdEncoded?Base64Encode(password):password },
-                { "auth_type", "basic" }
+                { "cmd", "sso" }
             };
 
             using (var client = new HttpClient())
