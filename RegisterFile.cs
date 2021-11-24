@@ -50,6 +50,8 @@ namespace pmis
         {
             string invalid = new string(Path.GetInvalidFileNameChars()) + new string(Path.GetInvalidPathChars());
             invalid += "=";
+            invalid += "~";
+
             // remove all invalid chars
             foreach (char c in invalid)
             {
