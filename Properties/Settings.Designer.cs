@@ -25,7 +25,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://pmis.sangah.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://pad.kspmis.com")]
         public string pmis_api_url {
             get {
                 return ((string)(this["pmis_api_url"]));
@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("GLB_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ALPHA2_PMIS")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("default")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PAD_PMIS")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));

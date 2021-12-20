@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="pmis_api_url" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://pmis.sangah.com</Value>
+      <Value Profile="(Default)">https://pad.kspmis.com</Value>
     </Setting>
     <Setting Name="pmis_project_code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">GLB_PMIS</Value>
+      <Value Profile="(Default)">ALPHA2_PMIS</Value>
     </Setting>
     <Setting Name="pmis_auth_key" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -364,7 +364,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">default</Value>
+      <Value Profile="(Default)">PAD_PMIS</Value>
     </Setting>
   </Settings>
 </SettingsFile>
