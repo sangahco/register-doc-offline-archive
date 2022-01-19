@@ -11,8 +11,8 @@ using System.Windows;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SangAh")]
-[assembly: AssemblyProduct("PMIS Offline Archive SNAPSHOT")]
-[assembly: AssemblyCopyright("Copyright ©SangAh 2017")]
+[assembly: AssemblyProduct("PMIS Offline Archive for SMARTSNU")]
+[assembly: AssemblyCopyright("Copyright ©SangAh 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
