@@ -259,10 +259,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Content Include="data\pad.db">
+    <Content Include="data\alpha2.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="data\profile.PAD_PMIS.yaml">
+    <Content Include="data\profile.판교 알파돔 6-2블록 복합시설 신축공사.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\alpha1.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\profile.판교 알파돔 6-1블록 복합시설 신축공사.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />

@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ALPHA2_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ALPHA1_PMIS")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("PAD_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("판교 알파돔 6-1블록 복합시설 신축공사")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
