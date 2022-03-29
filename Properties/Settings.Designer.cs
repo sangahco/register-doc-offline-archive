@@ -309,7 +309,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/archive.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/lotteriau.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));
@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("default")]
+        [global::System.Configuration.DefaultSettingValueAttribute("인니 Riau GFPP Project (275MW)")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));

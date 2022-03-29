@@ -185,7 +185,7 @@
 
                 </Grid>
             </TabItem>
-            <TabItem x:Name="archiveTabPage" Header="Archive" >
+            <TabItem x:Name="archiveTabPage" Header="Archive" IsEnabled="False" Visibility="Hidden" >
                 <Grid Background="White">
 
                     <DataGrid x:Name="archiveDataGridView" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="archiveDataGridView_MouseDoubleClick" MinRowHeight="30" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Margin="0,57,0.2,0" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" Grid.ColumnSpan="4">
