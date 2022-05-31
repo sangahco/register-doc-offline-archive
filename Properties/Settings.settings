@@ -6,7 +6,7 @@
       <Value Profile="(Default)">https://lgsp.kspmis.com</Value>
     </Setting>
     <Setting Name="pmis_project_code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">LGSP_DP3</Value>
+      <Value Profile="(Default)">LGSP_PUB</Value>
     </Setting>
     <Setting Name="pmis_auth_key" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -173,7 +173,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">DP3</Value>
+      <Value Profile="(Default)">PUB</Value>
     </Setting>
   </Settings>
 </SettingsFile>
