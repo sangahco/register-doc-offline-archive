@@ -49,7 +49,9 @@ namespace pmis
         public static string SanitizeName(string name)
         {
             string invalid = new string(Path.GetInvalidFileNameChars()) + new string(Path.GetInvalidPathChars());
-
+            invalid += "=";
+            invalid += "#";
+            invalid += "~";
             // remove all invalid chars
             foreach (char c in invalid)
             {
