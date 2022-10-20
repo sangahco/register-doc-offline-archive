@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("default")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LEGOLAND Korea Theme Park Cons.")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));

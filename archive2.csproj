@@ -33,7 +33,7 @@
     <ProductName>PMIS Offline Archive</ProductName>
     <PublisherName>SangAh</PublisherName>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>61</ApplicationRevision>
+    <ApplicationRevision>63</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -258,7 +258,7 @@
     <Content Include="data\llk_pmis.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="data\profile.LLK_PMIS.yaml">
+    <Content Include="data\profile.LEGOLAND Korea Theme Park Cons..yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />

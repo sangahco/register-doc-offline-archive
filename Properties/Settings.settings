@@ -364,7 +364,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">default</Value>
+      <Value Profile="(Default)">LEGOLAND Korea Theme Park Cons.</Value>
     </Setting>
   </Settings>
 </SettingsFile>
