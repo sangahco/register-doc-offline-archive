@@ -195,7 +195,7 @@ namespace pmis
                 srchHistory.ItemsSource = new BindingSource(AppConfig.RegisterHistoryOptions, null);
                 srchHistory.DisplayMemberPath = "Value";
                 srchHistory.SelectedValuePath = "Key";
-                srchHistory.SelectedValue = AppConfig.HISTORY_LATEST;
+                srchHistory.SelectedValue = AppConfig.HISTORY_SHOW_ALL;
 
                 settingForm = new SettingWindow(
                     registerDocumentDataService,

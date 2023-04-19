@@ -14,35 +14,35 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="133"/>
                             <ColumnDefinition Width="192"/>
-                            <ColumnDefinition Width="144"/>
-                            <ColumnDefinition Width="248"/>
-                            <ColumnDefinition Width="14*"/>
+                            <ColumnDefinition Width="162"/>
+                            <ColumnDefinition Width="258"/>
+                            <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Label x:Name="searchDocNumberLabel" Content="Document Number" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,3,0" HorizontalContentAlignment="Right"/>
+                        <Label x:Name="searchDocNumberLabel" Content="Document Number" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,3,0" HorizontalContentAlignment="Right" Height="30" Width="130"/>
                         <TextBox x:Name="srchNumber" Height="23" Margin="2,13,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchDocTitleLabel" Content="Document Title" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,3,0" HorizontalContentAlignment="Right"/>
+                        <Label x:Name="searchDocTitleLabel" Content="Document Title" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,3,0" HorizontalContentAlignment="Right" Height="30" Width="111"/>
                         <TextBox x:Name="srchTitle" Height="23" Margin="2,41,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchRegisteredByLabel" Content="Registered By" VerticalAlignment="Top" Margin="0,66,3,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
+                        <Label x:Name="searchRegisteredByLabel" Content="Registered By" VerticalAlignment="Top" Margin="0,66,3,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30" Width="100"/>
                         <TextBox x:Name="srchRegisteredBy" Height="23" Margin="2,69,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchDocTypeLabel" Content="Document Type" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <Label x:Name="searchDocDisciplineLabel" Content="Document Discipline" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,66,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <ComboBox x:Name="srchType" Margin="5.2,14,23.4,0" VerticalAlignment="Top" Grid.Column="3" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" Grid.ColumnSpan="2"/>
+                        <Label x:Name="searchDocTypeLabel" Content="Document Type" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="114"/>
+                        <Label x:Name="searchDocDisciplineLabel" Content="Document Discipline" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="147"/>
+                        <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,66,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="123"/>
+                        <ComboBox x:Name="srchType" Margin="5,14,23,0" VerticalAlignment="Top" Grid.Column="3" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" Grid.ColumnSpan="2"/>
                         <ComboBox x:Name="srchDiscipline" Margin="5,41,10,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
                         <ComboBox x:Name="srchStatus" Margin="5,69,10,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
-                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="27,96,69,0" HorizontalContentAlignment="Right"/>
-                        <DatePicker x:Name="srchFromDate" Margin="69,97,154,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="61,96,108,0" Grid.Column="1" HorizontalContentAlignment="Right"/>
-                        <DatePicker x:Name="srchToDate" Margin="89,97,1,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1"/>
-                        <Label x:Name="searchHistoryLabel" Content="History" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="96,96,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <ComboBox x:Name="srchHistory" Margin="5,97,10,0" VerticalAlignment="Top" Grid.Column="3"/>
-                        <Button x:Name="searchButton" Margin="18.2,55,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Width="104" Height="36" VerticalAlignment="Top">
+                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="27,96,69,0" HorizontalContentAlignment="Right" Height="30"/>
+                        <DatePicker x:Name="srchFromDate" Margin="69,97,154,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="28"/>
+                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="61,96,108,0" Grid.Column="1" HorizontalContentAlignment="Right" Height="30"/>
+                        <DatePicker x:Name="srchToDate" Margin="89,97,1,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1" Height="28"/>
+                        <Label x:Name="searchHistoryLabel" Content="History" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,96,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Width="95" Height="30"/>
+                        <ComboBox x:Name="srchHistory" Margin="5,97,10,0" VerticalAlignment="Top" Grid.Column="3" Height="26"/>
+                        <Button x:Name="searchButton" Margin="18,55,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="99">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="resources/search.png" Width="20" Height="20"  />
                                 <TextBlock x:Name="searchButtonLabel" Text="Search" Margin="5,0,0,0" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
-                        <Button x:Name="searchClearButton" Content="Clear" Margin="18.2,96,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1"/>
+                        <Button x:Name="searchClearButton" Content="Clear" Margin="18,96,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1" Width="68"/>
                     </Grid>
                     <DataGrid x:Name="registerDataGridView" Margin="0,134,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}">
                         <DataGrid.Columns>
@@ -174,7 +174,7 @@
 
                 </Grid>
             </TabItem>
-            <TabItem x:Name="archiveTabPage" Header="Archive" >
+            <TabItem x:Name="archiveTabPage" Header="Archive" Visibility="Collapsed" >
                 <Grid Background="White">
 
                     <DataGrid x:Name="archiveDataGridView" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="archiveDataGridView_MouseDoubleClick" MinRowHeight="30" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Margin="0,57,0.2,0" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" Grid.ColumnSpan="4">
