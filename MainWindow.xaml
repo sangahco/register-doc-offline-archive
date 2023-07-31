@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pmis"
         mc:Ignorable="d"
-        Title="{Binding ApplicationTitle}" Height="622" Width="1063" Icon="resources/sangah_logo_16.ico" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinWidth="1060" MinHeight="622">
+        Title="{Binding ApplicationTitle}" Height="800" Width="1200" Icon="resources/sangah_logo_16.ico" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinWidth="1060" MinHeight="622">
     <Grid>
         <TabControl x:Name="tabControl1" Margin="10,31,10,10" SelectionChanged="tabControl1_SelectionChanged">
             <TabItem x:Name="registerTabPage" Header="Register">
@@ -32,10 +32,10 @@
                         <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,80,247.8,0" Grid.Column="2" HorizontalContentAlignment="Right" Grid.ColumnSpan="2"/>
                         <ComboBox x:Name="srchDiscipline" Margin="5.2,55,9.8,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
                         <ComboBox x:Name="srchStatus" Margin="5.2,83,9.8,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
-                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="27,138,68.8,0" HorizontalContentAlignment="Right"/>
-                        <DatePicker x:Name="srchFromDate" Margin="69,139,153.8,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="61.2,138,107.8,0" Grid.Column="1" HorizontalContentAlignment="Right"/>
-                        <DatePicker x:Name="srchToDate" Margin="89.2,139,0.8,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1"/>
+                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="32,138,54,0" HorizontalContentAlignment="Right"/>
+                        <DatePicker x:Name="srchFromDate" Margin="79,139,125,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="75,138,89,0" Grid.Column="1" HorizontalContentAlignment="Right"/>
+                        <DatePicker x:Name="srchToDate" Margin="103,139,110,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1" Grid.ColumnSpan="2"/>
                         <Label x:Name="searchHistoryLabel" Content="History" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,110,247.8,0" Grid.Column="2" HorizontalContentAlignment="Right" Grid.ColumnSpan="2"/>
                         <ComboBox x:Name="srchHistory" Margin="5.2,111,9.8,0" VerticalAlignment="Top" Grid.Column="3"/>
                         <Button x:Name="searchButton" Margin="18.2,55,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Width="104" Height="36" VerticalAlignment="Top">
@@ -135,8 +135,7 @@
                         <ColumnDefinition Width="124"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="docReviewStatusLabel" Content="Review Outcome" Margin="18,11,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" HorizontalAlignment="Right" 
-                           Height="26"/>
+                    <Label x:Name="docReviewStatusLabel" Content="Review Outcome" Margin="18,11,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" HorizontalAlignment="Right"/>
                     <TextBlock x:Name="docViewReviewStatus" HorizontalAlignment="Left" Margin="5,16,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" />
                     <DataGrid x:Name="reviewDataGridView" Margin="10,42,10.2,159" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserResizeRows="False" MinRowHeight="30" IsReadOnly="True" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Grid.ColumnSpan="2" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" >
                         <DataGrid.Columns>
@@ -185,7 +184,7 @@
 
                 </Grid>
             </TabItem>
-            <TabItem x:Name="archiveTabPage" Header="Archive" >
+            <TabItem x:Name="archiveTabPage" Header="Archive" Visibility="Hidden" >
                 <Grid Background="White">
 
                     <DataGrid x:Name="archiveDataGridView" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="archiveDataGridView_MouseDoubleClick" MinRowHeight="30" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Margin="0,57,0.2,0" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" Grid.ColumnSpan="4">
@@ -197,7 +196,7 @@
                         </DataGrid.Columns>
                     </DataGrid>
                     <StackPanel HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="863" Orientation="Horizontal" Margin="10,10,0,0">
-                        <Label x:Name="archiveFilterTypeLabel" Content="Filter Type" HorizontalAlignment="Right" VerticalAlignment="Center" Height="26" Margin="16,7,0,7"/>
+                        <Label x:Name="archiveFilterTypeLabel" Content="Filter Type" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="16,0,0,0"/>
                         <ComboBox x:Name="archiveFilterTypeCombo" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="0,9"/>
                         <Label x:Name="archiveSearchLabel" Content="Search" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Right" Margin="20,0,0,0"/>
                         <TextBox x:Name="archiveFullSearchValue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="281" Height="23"/>
