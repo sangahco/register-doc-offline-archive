@@ -10,41 +10,41 @@
         <TabControl x:Name="tabControl1" Margin="10,31,10,10" SelectionChanged="tabControl1_SelectionChanged">
             <TabItem x:Name="registerTabPage" Header="Register">
                 <Grid Background="White">
-                    <Grid Margin="0,0,0,390" HorizontalAlignment="Left" Width="862">
+                    <Grid Margin="0,0,0,390" HorizontalAlignment="Left" Width="920">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="133"/>
-                            <ColumnDefinition Width="192"/>
-                            <ColumnDefinition Width="144"/>
-                            <ColumnDefinition Width="248"/>
-                            <ColumnDefinition Width="14*"/>
+                            <ColumnDefinition Width="146"/>
+                            <ColumnDefinition Width="223"/>
+                            <ColumnDefinition Width="158"/>
+                            <ColumnDefinition Width="219"/>
+                            <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Label x:Name="searchDocNumberLabel" Content="Document Number" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,3,0" HorizontalContentAlignment="Right"/>
+                        <Label x:Name="searchDocNumberLabel" Content="Document Number" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,3,0" HorizontalContentAlignment="Right" Height="30" Width="138"/>
                         <TextBox x:Name="srchNumber" Height="23" Margin="2,13,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchDocTitleLabel" Content="Document Title" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,3,0" HorizontalContentAlignment="Right"/>
+                        <Label x:Name="searchDocTitleLabel" Content="Document Title" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,3,0" HorizontalContentAlignment="Right" Height="30" Width="111"/>
                         <TextBox x:Name="srchTitle" Height="23" Margin="2,41,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchRegisteredByLabel" Content="Registered By" VerticalAlignment="Top" Margin="0,66,3,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
+                        <Label x:Name="searchRegisteredByLabel" Content="Registered By" VerticalAlignment="Top" Margin="0,66,3,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30" Width="100"/>
                         <TextBox x:Name="srchRegisteredBy" Height="23" Margin="2,69,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchDocTypeLabel" Content="Document Type" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <Label x:Name="searchDocDisciplineLabel" Content="Document Discipline" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,66,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <ComboBox x:Name="srchType" Margin="5.2,14,23.4,0" VerticalAlignment="Top" Grid.Column="3" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" Grid.ColumnSpan="2"/>
+                        <Label x:Name="searchDocTypeLabel" Content="Document Type" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="114"/>
+                        <Label x:Name="searchDocDisciplineLabel" Content="Document Discipline" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="147"/>
+                        <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,66,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="123"/>
+                        <ComboBox x:Name="srchType" Margin="5,14,23,0" VerticalAlignment="Top" Grid.Column="3" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" Grid.ColumnSpan="2"/>
                         <ComboBox x:Name="srchDiscipline" Margin="5,41,10,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
                         <ComboBox x:Name="srchStatus" Margin="5,69,10,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
-                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="27,96,69,0" HorizontalContentAlignment="Right"/>
-                        <DatePicker x:Name="srchFromDate" Margin="69,97,154,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="61,96,108,0" Grid.Column="1" HorizontalContentAlignment="Right"/>
-                        <DatePicker x:Name="srchToDate" Margin="89,97,1,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1"/>
-                        <Label x:Name="searchHistoryLabel" Content="History" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="96,96,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
-                        <ComboBox x:Name="srchHistory" Margin="5,97,10,0" VerticalAlignment="Top" Grid.Column="3"/>
-                        <Button x:Name="searchButton" Margin="18.2,55,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Width="104" Height="36" VerticalAlignment="Top">
+                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="19,96,0,0" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Left" Width="44"/>
+                        <DatePicker x:Name="srchFromDate" Margin="69,97,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="28" HorizontalAlignment="Left"/>
+                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="0,96,124,0" Grid.Column="1" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right" Width="25"/>
+                        <DatePicker x:Name="srchToDate" Margin="0,97,1,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1" Height="28" HorizontalAlignment="Right" Width="119"/>
+                        <Label x:Name="searchHistoryLabel" Content="History" VerticalAlignment="Top" Margin="0,96,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right" Width="57"/>
+                        <ComboBox x:Name="srchHistory" Margin="5,97,10,0" VerticalAlignment="Top" Grid.Column="3" Height="26"/>
+                        <Button x:Name="searchButton" Margin="18,41,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" MinWidth="88">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="resources/search.png" Width="20" Height="20"  />
                                 <TextBlock x:Name="searchButtonLabel" Text="Search" Margin="5,0,0,0" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
-                        <Button x:Name="searchClearButton" Content="Clear" Margin="18.2,96,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1"/>
+                        <Button x:Name="searchClearButton" Content="Clear" Margin="18,100,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1"/>
                     </Grid>
-                    <DataGrid x:Name="registerDataGridView" Margin="0,134,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}">
+                    <DataGrid x:Name="registerDataGridView" Margin="0,134,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" SelectionChanged="registerDataGridView_SelectionChanged">
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="doclist_docno" Binding="{Binding [docno]}" ClipboardContentBinding="{x:Null}" Header="Document Number" Width="0.2*"/>
                             <DataGridTextColumn x:Name="doclist_title" Binding="{Binding [title]}" ClipboardContentBinding="{x:Null}" Header="Title" Width="0.4*"/>
@@ -54,8 +54,8 @@
                             <DataGridTextColumn x:Name="doclist_organization" Binding="{Binding [organization]}" ClipboardContentBinding="{x:Null}" Header="Organization" Visibility="Hidden" Width="90"/>
                             <DataGridTextColumn x:Name="doclist_type" Binding="{Binding [doc_type]}" ClipboardContentBinding="{x:Null}" Header="Type" Width="0.2*"/>
                             <DataGridTextColumn x:Name="doclist_review_status" Binding="{Binding [review_status]}" ClipboardContentBinding="{x:Null}" Header="Review Status" Visibility="Hidden" Width="100"/>
-                            <DataGridTextColumn x:Name="doclist_registered_by" Binding="{Binding [registered_by]}" ClipboardContentBinding="{x:Null}" Header="Registered By" Width="0.2*"/>
-                            <DataGridTextColumn x:Name="doclist_registered" Binding="{Binding [registered]}" ClipboardContentBinding="{x:Null}" Header="Registered" Width="72"/>
+                            <DataGridTextColumn x:Name="doclist_registered_by" Binding="{Binding [registered_by]}" ClipboardContentBinding="{x:Null}" Header="Registered By" Width="100"/>
+                            <DataGridTextColumn x:Name="doclist_registered" Binding="{Binding [registered]}" ClipboardContentBinding="{x:Null}" Header="Registered" Width="100"/>
                             <DataGridTextColumn x:Name="doclist_discipline" Binding="{Binding [discipline]}" ClipboardContentBinding="{x:Null}" Header="Discipline" Visibility="Hidden" Width="78"/>
                             <DataGridTextColumn x:Name="doclist_status" Binding="{Binding [doc_status]}" ClipboardContentBinding="{x:Null}" Header="Status" Width="100"/>
                         </DataGrid.Columns>

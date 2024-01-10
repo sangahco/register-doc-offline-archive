@@ -661,5 +661,10 @@ namespace pmis
                 ex.Log().Display();
             }
         }
+
+        private void registerDataGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
