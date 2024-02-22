@@ -256,8 +256,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Content Include="data\lgchem_pmis.db" />
-    <Content Include="data\profile.LG화학대전기술연구원 2연구동%282P동%29 리모델링.yaml" />
+    <AdditionalFiles Include="data\daj1_pmis.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="data\profile.쿠팡 남대전 FC 신축공사.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
