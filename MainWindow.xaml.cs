@@ -218,6 +218,7 @@ namespace pmis
                     LoadPictureViewer();
                     LoadLanguage();
                     ShowRegisterList();
+                    ShowArchiveList();
                 };
 
                 ProfileService.LoadAndApplyCurrentProfile();

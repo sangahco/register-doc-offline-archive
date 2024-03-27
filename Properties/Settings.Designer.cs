@@ -365,6 +365,7 @@ namespace pmis.Properties {
   <string>Risk</string>
   <string>Contract</string>
   <string>Register</string>
+  <string>Document</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection archive_types {
             get {

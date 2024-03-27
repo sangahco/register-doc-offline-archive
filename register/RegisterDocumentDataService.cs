@@ -133,7 +133,7 @@ namespace pmis
             var apiurl = Properties.Settings.Default.pmis_api_url;
             var project = Properties.Settings.Default.pmis_project_code;
             var authkey = Properties.Settings.Default.pmis_auth_key;
-            string url = String.Format("{0}/spr/register/list.json", apiurl);
+            string url = String.Format("{0}/api/register/docs.action", apiurl);
 
             try
             {

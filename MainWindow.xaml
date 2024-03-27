@@ -186,9 +186,9 @@
                         </DataGrid.Columns>
                     </DataGrid>
                     <StackPanel HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="863" Orientation="Horizontal" Margin="10,10,0,0">
-                        <Label x:Name="archiveFilterTypeLabel" Content="Filter Type" HorizontalAlignment="Right" VerticalAlignment="Center" Height="26" Margin="16,7,0,7"/>
+                        <Label x:Name="archiveFilterTypeLabel" Content="Filter Type" HorizontalAlignment="Right" Margin="16,0,0,7" VerticalAlignment="Bottom"/>
                         <ComboBox x:Name="archiveFilterTypeCombo" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="0,9"/>
-                        <Label x:Name="archiveSearchLabel" Content="Search" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Right" Margin="20,0,0,0"/>
+                        <Label x:Name="archiveSearchLabel" Content="Search" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Right" Margin="20,0,0,7" Height="28"/>
                         <TextBox x:Name="archiveFullSearchValue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="281" Height="23"/>
                         <Button x:Name="archiveSearchButton" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Margin="24,0,0,0" Click="archiveSearchButton_Click" Height="36">
                             <StackPanel Orientation="Horizontal">

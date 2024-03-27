@@ -361,6 +361,7 @@
   &lt;string&gt;Risk&lt;/string&gt;
   &lt;string&gt;Contract&lt;/string&gt;
   &lt;string&gt;Register&lt;/string&gt;
+  &lt;string&gt;Document&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
