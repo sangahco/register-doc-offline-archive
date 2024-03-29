@@ -19,7 +19,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
-    <PublishUrl>D:\tmp\</PublishUrl>
+    <PublishUrl>D:\tmp\ssac-archive\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -34,7 +34,7 @@
     <ProductName>PMIS Offline Archive</ProductName>
     <PublisherName>SangAh</PublisherName>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>60</ApplicationRevision>
+    <ApplicationRevision>61</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -265,13 +265,13 @@
     <Content Include="data\LH181204.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="data\profile.LH161024.yaml">
+    <Content Include="data\profile.South Saad Al-Abdullah 신도시 마스터 플랜 상세 설계.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="data\profile.LH180528.yaml">
+    <Content Include="data\profile.쿠웨이트 사우스 사드 알 압둘라신도시 비즈니스모델 검토 용역 .yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="data\profile.LH181204.yaml">
+    <Content Include="data\profile.쿠웨이트 압둘라 신도시 해외건설 기술자문용역.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />

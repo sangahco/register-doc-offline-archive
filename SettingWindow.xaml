@@ -41,13 +41,13 @@
                             <ComboBox x:Name="settingDbType" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="263"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox x:Name="sqliteSettingsGroupBox" Header="SQLite Settings" Height="129" VerticalAlignment="Top" Margin="0,101,0,0" >
+                    <GroupBox x:Name="sqliteSettingsGroupBox" Header="SQLite Settings" Height="173" VerticalAlignment="Top" Margin="0,101,0,0" >
                         <Grid>
                             <Label x:Name="settingDatabaseLocationLabel" Content="Database File Location" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                             <Button x:Name="sqliteFileLocationButton" Content="Browse..." HorizontalAlignment="Left" Margin="271,36,0,0" VerticalAlignment="Top" Width="75" Click="sqliteFileLocationButton_Click"/>
                             <Button x:Name="connectSQLiteDatabaseButton" Content="Connect Database" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Click="connectSQLiteDatabaseButton_Click" Padding="4,1" />
                             <TextBox x:Name="settingSQLiteDbLocation" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
-                            <TextBlock x:Name="settingDBConnectionInfo" HorizontalAlignment="Left" Margin="134,67,0,0" TextWrapping="Wrap" Text="Not Connected" VerticalAlignment="Top" FontStyle="Italic"/>
+                            <TextBlock x:Name="settingDBConnectionInfo" HorizontalAlignment="Left" Margin="10,93,0,-11" TextWrapping="Wrap" Text="Not Connected" VerticalAlignment="Top" FontStyle="Italic"/>
                         </Grid>
                     </GroupBox>
                 </Grid>
@@ -121,8 +121,8 @@
         </TabControl>
         <Button x:Name="settingsOkButton" Content="OK" HorizontalAlignment="Left" Margin="579,0,0,10" Width="91" Height="39" VerticalAlignment="Bottom" Click="settingsOkButton_Click"/>
         <Button x:Name="settingsCancelButton" Content="Cancel" Margin="675,0,10,10" Height="39" VerticalAlignment="Bottom" Click="settingsCancelButton_Click"/>
-        <TextBlock x:Name="productInfoLabel" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" Text="Version" Height="16" VerticalAlignment="Bottom"/>
-        <TextBlock x:Name="currentProfile" HorizontalAlignment="Left" Margin="10,0,0,30.2" TextWrapping="Wrap" Text="Current Profile" Height="16" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="productInfoLabel" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" Text="Version" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="currentProfile" HorizontalAlignment="Left" Margin="10,0,0,30" TextWrapping="Wrap" Text="Current Profile" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>
