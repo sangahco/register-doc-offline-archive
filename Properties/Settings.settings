@@ -365,7 +365,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">default</Value>
+      <Value Profile="(Default)">South Saad Al-Abdullah 신도시 마스터 플랜 상세 설계</Value>
     </Setting>
   </Settings>
 </SettingsFile>

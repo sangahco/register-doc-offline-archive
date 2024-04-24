@@ -378,7 +378,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("default")]
+        [global::System.Configuration.DefaultSettingValueAttribute("South Saad Al-Abdullah 신도시 마스터 플랜 상세 설계")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
