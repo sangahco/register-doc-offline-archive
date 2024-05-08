@@ -55,6 +55,10 @@ namespace pmis
             {
                 name = name.Replace(c.ToString(), "_");
             }
+            if (name[name.Length - 1].Equals('.'))
+            {
+                name = name.Remove(name.Length - 1, 1) + "%2E";
+            }
 
             // strip the name left and right
             name = name.Trim();
