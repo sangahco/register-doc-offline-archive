@@ -152,7 +152,7 @@
                     </DataGrid>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="pictureViewerTabPage" Header="Picture Viewer">
+            <TabItem x:Name="pictureViewerTabPage" Header="Picture Viewer" Visibility="Collapsed">
                 <Grid >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="311*"/>
