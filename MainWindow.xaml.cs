@@ -666,5 +666,10 @@ namespace pmis
         {
 
         }
+
+        private void archiveFilterTypeCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

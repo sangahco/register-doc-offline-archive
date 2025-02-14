@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="pmis_api_url" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://pmis.sangah.com</Value>
+      <Value Profile="(Default)">https://jejuedu.kspmis.com</Value>
     </Setting>
     <Setting Name="pmis_project_code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">GLB_PMIS</Value>
+      <Value Profile="(Default)">JEJU_EDU</Value>
     </Setting>
     <Setting Name="pmis_auth_key" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -341,7 +341,7 @@
       <Value Profile="(Default)">register</Value>
     </Setting>
     <Setting Name="sqlite_db_location" Type="System.String" Scope="User">
-      <Value Profile="(Default)">data/archive.db</Value>
+      <Value Profile="(Default)">data/jejuedu.db</Value>
     </Setting>
     <Setting Name="db_type" Type="System.String" Scope="User">
       <Value Profile="(Default)">sqlite</Value>
@@ -351,6 +351,9 @@
     </Setting>
     <Setting Name="picture_folder_uri" Type="System.String" Scope="User">
       <Value Profile="(Default)">pictures</Value>
+    </Setting>
+    <Setting Name="current_profile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">제주유아</Value>
     </Setting>
     <Setting Name="archive_types" Type="System.Collections.Specialized.StringCollection" Scope="Application">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
@@ -365,9 +368,6 @@
   &lt;string&gt;Document&lt;/string&gt;
   &lt;string&gt;Report&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
-    </Setting>
-    <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">default</Value>
     </Setting>
   </Settings>
 </SettingsFile>

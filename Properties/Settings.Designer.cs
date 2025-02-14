@@ -25,7 +25,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://pmis.sangah.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://jejuedu.kspmis.com")]
         public string pmis_api_url {
             get {
                 return ((string)(this["pmis_api_url"]));
@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("GLB_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("JEJU_EDU")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -309,7 +309,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/archive.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/jejuedu.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));
@@ -355,35 +355,26 @@ namespace pmis.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>Workflow</string>
-  <string>Picture</string>
-  <string>Issue</string>
-  <string>Risk</string>
-  <string>Contract</string>
-  <string>Register</string>
-  <string>Message</string>
-  <string>Document</string>
-  <string>Report</string>
-</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection archive_types {
-            get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["archive_types"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("default")]
+        [global::System.Configuration.DefaultSettingValueAttribute("제주유아")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
             }
             set {
                 this["current_profile"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
+            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
+            "tring>Report</string>\r\n</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection archive_types {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["archive_types"]));
             }
         }
     }
