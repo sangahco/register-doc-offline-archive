@@ -5,6 +5,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -93,16 +94,16 @@ namespace pmis.archive
             var apiurl = Properties.Settings.Default.pmis_api_url;
             var project = Properties.Settings.Default.pmis_project_code;
             var authkey = Properties.Settings.Default.pmis_auth_key;
-            string url = String.Format("{0}/api/archive.action", apiurl);
+            string url = String.Format("{0}/spr/archive/list.json", apiurl);
 
             try
             {
                 using (var client = new HttpClient())
                 {
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authkey);
                     var values = new Dictionary<string, string> {
                         { "forward", "json" },
                         { "pjt_cd", project },
-                        { "access_token", authkey },
                         { "pageScale", "200" },
                         { "pageNo", "1" },
                         { "login_locale", "ko_KR" }
