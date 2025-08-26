@@ -115,7 +115,7 @@ namespace pmis
             var apiurl = Properties.Settings.Default.pmis_api_url;
             var project = Properties.Settings.Default.pmis_project_code;
             var authkey = Properties.Settings.Default.pmis_auth_key;
-            string url = String.Format("{0}/api/register/reviews.action", apiurl);
+            string url = String.Format("{0}/spr/register/etc/load-review-info.json", apiurl);
 
             try
             {

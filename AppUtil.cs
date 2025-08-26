@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -30,13 +31,14 @@ namespace pmis
             string url = String.Format("{0}/Main/Token.action", host);
 
             var values = new Dictionary<string, string> {
-                { "user_no", username },
-                { "passwd", pwdEncoded?Base64Encode(password):password },
-                { "auth_type", "basic" }
+                // { "user_no", username },
+                // { "passwd", pwdEncoded?Base64Encode(password):password },
+                // { "auth_type", "basic" }
             };
 
             using (var client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Base64Encode(username + ":" + password));
                 var content = new FormUrlEncodedContent(values);
                 var response = await client.PostAsync(url, content);
                 response.EnsureSuccessStatusCode();

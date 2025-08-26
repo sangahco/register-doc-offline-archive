@@ -41,13 +41,13 @@
                             <ComboBox x:Name="settingDbType" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="263"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox x:Name="sqliteSettingsGroupBox" Header="SQLite Settings" Height="129" VerticalAlignment="Top" Margin="0,101,0,0" >
+                    <GroupBox x:Name="sqliteSettingsGroupBox" Header="SQLite Settings" Height="167" VerticalAlignment="Top" Margin="0,101,0,0" >
                         <Grid>
                             <Label x:Name="settingDatabaseLocationLabel" Content="Database File Location" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                             <Button x:Name="sqliteFileLocationButton" Content="Browse..." HorizontalAlignment="Left" Margin="271,36,0,0" VerticalAlignment="Top" Width="75" Click="sqliteFileLocationButton_Click"/>
                             <Button x:Name="connectSQLiteDatabaseButton" Content="Connect Database" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Click="connectSQLiteDatabaseButton_Click" Padding="4,1" />
                             <TextBox x:Name="settingSQLiteDbLocation" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
-                            <TextBlock x:Name="settingDBConnectionInfo" HorizontalAlignment="Left" Margin="134,67,0,0" TextWrapping="Wrap" Text="Not Connected" VerticalAlignment="Top" FontStyle="Italic"/>
+                            <TextBlock x:Name="settingDBConnectionInfo" HorizontalAlignment="Left" Margin="10,93,0,0" TextWrapping="Wrap" Text="Not Connected" VerticalAlignment="Top" FontStyle="Italic"/>
                         </Grid>
                     </GroupBox>
                 </Grid>
@@ -60,7 +60,7 @@
                             <TextBox x:Name="settingPmisWsAuthKey" HorizontalAlignment="Left" Height="23" Margin="10,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" UseLayoutRounding="False" TabIndex="2"/>
                             <TextBox x:Name="settingPmisWsProjectCode" HorizontalAlignment="Left" Height="23" Margin="10,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" TabIndex="1"/>
                             <Button x:Name="importRegisterDataButton" Content="Import Register Data" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" Padding="4,1" Click="importRegisterDataButton_Click"/>
-                            <Button x:Name="importReviewDataButton" Content="Import Review Data" HorizontalAlignment="Left" Margin="137,181,0,0" VerticalAlignment="Top" Padding="4,1" Click="importReviewDataButton_Click"/>
+                            <Button x:Name="importReviewDataButton" Content="Import Review Data" HorizontalAlignment="Left" Margin="177,181,0,0" VerticalAlignment="Top" Padding="4,1" Click="importReviewDataButton_Click"/>
                             <GroupBox x:Name="groupBox5" Header="Data Stats" Height="89" Margin="558,10,10,0" VerticalAlignment="Top">
                                 <Grid >
                                     <Grid.ColumnDefinitions>
@@ -79,7 +79,7 @@
                             <Border BorderBrush="#FFACACAC" BorderThickness="1" Margin="10,218,10,10">
                                 <TextBox x:Name="importLogViewer" TextWrapping="Wrap" Background="#FFF9F9F9" VerticalScrollBarVisibility="Auto"/>
                             </Border>
-                            <Button x:Name="importArchiveDataButton" Content="Import Archive Data" HorizontalAlignment="Left" Margin="258,181,0,0" VerticalAlignment="Top" Padding="4,1" Click="importArchiveDataButton_Click"/>
+                            <Button x:Name="importArchiveDataButton" Content="Import Archive Data" HorizontalAlignment="Left" Margin="338,181,0,0" VerticalAlignment="Top" Padding="4,1" Click="importArchiveDataButton_Click"/>
                             <Button x:Name="button" Content="Request Token" HorizontalAlignment="Left" Margin="297,145,0,0" VerticalAlignment="Top" Height="23" Padding="4,1" Click="button_Click" TabIndex="4" />
                         </Grid>
                     </GroupBox>
@@ -121,8 +121,8 @@
         </TabControl>
         <Button x:Name="settingsOkButton" Content="OK" HorizontalAlignment="Left" Margin="579,0,0,10" Width="91" Height="39" VerticalAlignment="Bottom" Click="settingsOkButton_Click"/>
         <Button x:Name="settingsCancelButton" Content="Cancel" Margin="675,0,10,10" Height="39" VerticalAlignment="Bottom" Click="settingsCancelButton_Click"/>
-        <TextBlock x:Name="productInfoLabel" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" Text="Version" Height="16" VerticalAlignment="Bottom"/>
-        <TextBlock x:Name="currentProfile" HorizontalAlignment="Left" Margin="10,0,0,30.2" TextWrapping="Wrap" Text="Current Profile" Height="16" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="productInfoLabel" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" Text="Version" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="currentProfile" HorizontalAlignment="Left" Margin="10,0,0,30.2" TextWrapping="Wrap" Text="Current Profile" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>
