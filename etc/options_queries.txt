@@ -1,6 +1,103 @@
 ﻿link to export fbs (run the script on console!)
 https://gist.github.com/emawind84/c2b8c6da37d935c7669af10e2d051708
 
+# this script generate a csv formatted content with all doc classification to use with multi fbs selector
+
+ret = sql('''
+with criteria as (
+    select 
+        'YNPOWER' as p_pjt_cd,
+        3 as p_start_level
+    from dual
+)
+
+select * from (
+    select
+      doc_clss_name, doc_cd, doc_cd_path, to_char(level - (p_start_level - 1)) as lvl
+    from view_doc_clss, criteria
+    where 1=1
+        and (CONNECT_BY_ISLEAF = 1 OR level >= p_start_level)
+        --and doc_cd in (select doc_cd from used_doc_cd)
+    and pjt_cd = criteria.p_pjt_cd
+    and doc_div = '6'
+    connect by prior DOC_CD = UP_DOC_CD
+    and pjt_cd = criteria.p_pjt_cd
+    and doc_div = '6'
+    start with up_doc_cd = '!0!'
+    and pjt_cd = criteria.p_pjt_cd
+    and doc_div = '6'
+)
+
+-- we take only doc_cd actually used
+where doc_cd in (
+
+    select doc_cd 
+    from doc_clss, criteria
+    where pjt_cd = criteria.p_pjt_cd
+    and doc_div = '6'
+    connect by DOC_CD = prior UP_DOC_CD
+    and pjt_cd = prior pjt_cd
+    and doc_div = prior doc_div
+    
+    start with doc_cd in ( select doc_cd 
+                from doc_dgn_cat_type
+                join doc_dgn_cat on ( doc_dgn_cat_type.doc_seq = doc_dgn_cat.doc_seq )
+                where doc_dgn_cat.del_yn = 0 and doc_dgn_cat.pjt_cd = criteria.p_pjt_cd )
+    and pjt_cd = criteria.p_pjt_cd
+    and doc_div = '6'
+)
+;''')
+
+for d in ret:
+    row = u''.join(d['LVL'])
+    row += ',' + u''.join(d['DOC_CLSS_NAME']).replace(',',' ')
+    row += ',' + u''.join(d['DOC_CD_PATH'])
+    print row.encode('utf-8')
+
+
+
+# this script generate a csv formatted content with only used classification to use with single fbs selector
+
+ret = sql('''
+with criteria as (
+    select 
+        'GLB_PMIS' as p_pjt_cd,
+        2 as p_start_level
+    from dual
+)
+select
+  distinct LTRIM( SYS_CONNECT_BY_PATH(
+    (case when level < p_start_level and CONNECT_BY_ISLEAF != 1  then '' else DOC_CLSS_NAME end) , ' > '), ' > ' ) DOC_CLSS_NAME,
+    doc_cd_path, to_char(level - (p_start_level - 1)) as lvl
+from VIEW_doc_clss, criteria
+where 1=1
+    and (CONNECT_BY_ISLEAF = 1 OR level >= p_start_level)
+    and doc_cd in ( 
+            select distinct doc_cd 
+            from doc_dgn_cat_type
+            join doc_dgn_cat on ( doc_dgn_cat_type.doc_seq = doc_dgn_cat.doc_seq )
+            where doc_dgn_cat_type.pjt_cd = criteria.p_pjt_cd
+            and doc_dgn_cat.del_yn = 0
+    )
+and pjt_cd = criteria.p_pjt_cd
+and doc_div = '6'
+connect by prior DOC_CD = UP_DOC_CD
+and pjt_cd = criteria.p_pjt_cd
+and doc_div = '6'
+start with up_doc_cd = '!0!'
+and pjt_cd = criteria.p_pjt_cd
+and doc_div = '6'
+order by doc_clss_name
+;''')
+
+for d in ret:
+    row = u''.join(d['LVL'])
+    row += ',' + u''.join(d['DOC_CLSS_NAME']).replace(',',' ')
+    row += ',' + u''.join(d['DOC_CD_PATH'])
+    print row.encode('utf-8')
+
+
+
 
 # DOC DISCIPLINE!
 select

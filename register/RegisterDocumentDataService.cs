@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using pmis.register;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace pmis
 {
@@ -139,6 +140,8 @@ namespace pmis
             {
                 using (var client = new HttpClient())
                 {
+                    // Set the default timeout
+                    client.Timeout = TimeSpan.FromSeconds(300); // Adjust the timeout as needed
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authkey);
                     var values = new Dictionary<string, string> {
                         { "forward", "json" },
@@ -155,15 +158,22 @@ namespace pmis
                     {
                         values["pageNo"]= "" + page;
                         var content = new FormUrlEncodedContent(values);
-                        var response = await client.PostAsync(url, content);
-                        response.EnsureSuccessStatusCode();
-                        var responseString = await response.Content.ReadAsStringAsync();
-                        PmisJsonResponse<RegisterDocument> dt = JsonConvert.DeserializeObject<PmisJsonResponse<RegisterDocument>>(responseString);
-                        ImportData(dt.List);
-
-                        page = dt.PageInfo.CurrentPage + 1;
-                        total = dt.PageInfo.TotalPages;
-                        LogUtil.Log(dt.ToString());
+                        try
+                        {
+                            var response = await client.PostAsync(url, content);
+                            response.EnsureSuccessStatusCode();
+                            var responseString = await response.Content.ReadAsStringAsync();
+                            PmisJsonResponse<RegisterDocument> dt = JsonConvert.DeserializeObject<PmisJsonResponse<RegisterDocument>>(responseString);
+                            ImportData(dt.List);
+                            page = dt.PageInfo.CurrentPage + 1;
+                            total = dt.PageInfo.TotalPages;
+                            LogUtil.Log(dt.ToString());
+                        }
+                        catch (TaskCanceledException e)
+                        {
+                            e.Log();
+                            continue;
+                        }
                     }
                 }
             }

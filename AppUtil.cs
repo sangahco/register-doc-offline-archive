@@ -31,6 +31,7 @@ namespace pmis
             string url = String.Format("{0}/Main/Token.action", host);
 
             var values = new Dictionary<string, string> {
+                { "expires_in", "3600" }
                 // { "user_no", username },
                 // { "passwd", pwdEncoded?Base64Encode(password):password },
                 // { "auth_type", "basic" }
