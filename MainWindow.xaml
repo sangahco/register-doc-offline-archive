@@ -49,24 +49,24 @@
                     <DataGrid x:Name="registerDataGridView" Margin="0,188,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" Grid.ColumnSpan="2">
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="doclist_docno" Binding="{Binding [docno]}" ClipboardContentBinding="{x:Null}" Header="Document Number" Width="0.2*"/>
-                            <DataGridTextColumn x:Name="doclist_title" Binding="{Binding [title]}" ClipboardContentBinding="{x:Null}" Header="Title" Width="0.4*"/>
-                            <DataGridTextColumn x:Name="doclist_revision" Binding="{Binding [revision]}" ClipboardContentBinding="{x:Null}" Header="Revision" Width="60"/>
+                            <DataGridTextColumn x:Name="doclist_title" Binding="{Binding [title]}" ClipboardContentBinding="{x:Null}" Header="Title" Width="0.38*"/>
+                            <DataGridTextColumn x:Name="doclist_revision" Binding="{Binding [revision]}" ClipboardContentBinding="{x:Null}" Header="Revision" Width="64"/>
                             <DataGridTextColumn x:Name="doclist_version" Binding="{Binding [doc_version]}" ClipboardContentBinding="{x:Null}" Header="Version" Width="60"/>
-                            <DataGridTextColumn x:Name="doclist_revision_date" Binding="{Binding [revision_date]}" ClipboardContentBinding="{x:Null}" Header="Revision Date" Width="100"/>
+                            <DataGridTextColumn x:Name="doclist_revision_date" Binding="{Binding [revision_date]}" ClipboardContentBinding="{x:Null}" Header="Revision Date" Width="110"/>
                             <DataGridTextColumn x:Name="doclist_organization" Binding="{Binding [organization]}" ClipboardContentBinding="{x:Null}" Header="Organization" Visibility="Hidden" Width="90"/>
-                            <DataGridTextColumn x:Name="doclist_type" Binding="{Binding [doc_type]}" ClipboardContentBinding="{x:Null}" Header="Type" Width="0.2*"/>
+                            <DataGridTextColumn x:Name="doclist_type" Binding="{Binding [doc_type]}" ClipboardContentBinding="{x:Null}" Header="Type" Width="0.18*"/>
                             <DataGridTextColumn x:Name="doclist_review_status" Binding="{Binding [review_status]}" ClipboardContentBinding="{x:Null}" Header="Review Status" Visibility="Hidden" Width="100"/>
-                            <DataGridTextColumn x:Name="doclist_registered_by" Binding="{Binding [registered_by]}" ClipboardContentBinding="{x:Null}" Header="Registered By" Width="0.2*"/>
-                            <DataGridTextColumn x:Name="doclist_registered" Binding="{Binding [registered]}" ClipboardContentBinding="{x:Null}" Header="Registered" Width="72"/>
+                            <DataGridTextColumn x:Name="doclist_registered_by" Binding="{Binding [registered_by]}" ClipboardContentBinding="{x:Null}" Header="Registered By" Width="120"/>
+                            <DataGridTextColumn x:Name="doclist_registered" Binding="{Binding [registered]}" ClipboardContentBinding="{x:Null}" Header="Registered" Width="90"/>
                             <DataGridTextColumn x:Name="doclist_discipline" Binding="{Binding [discipline]}" ClipboardContentBinding="{x:Null}" Header="Discipline" Visibility="Hidden" Width="78"/>
-                            <DataGridTextColumn x:Name="doclist_status" Binding="{Binding [doc_status]}" ClipboardContentBinding="{x:Null}" Header="Status" Width="100"/>
+                            <DataGridTextColumn x:Name="doclist_status" Binding="{Binding [doc_status]}" ClipboardContentBinding="{x:Null}" Header="Status" Width="0.24*"/>
                         </DataGrid.Columns>
                     </DataGrid>
                     <Label x:Name="searchDocTypeLabel" Content="Document Type" VerticalAlignment="Top" Margin="0,8,8,0" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Height="30"/>
-                    <ComboBox x:Name="srchType" Margin="0,12,0,0" VerticalAlignment="Top" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType_SelectionChanged" Grid.Column="1" />
-                    <ComboBox x:Name="srchType2" Margin="184,12,0,0" VerticalAlignment="Top" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType2_SelectionChanged" Grid.Column="1" />
-                    <ComboBox x:Name="srchType3" Margin="372,12,0,0" VerticalAlignment="Top" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType3_SelectionChanged" Grid.Column="1" />
-                    <ComboBox x:Name="srchType4" Margin="560,12,0,0" VerticalAlignment="Top" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" Grid.Column="1" />
+                    <ComboBox x:Name="srchType" Margin="0,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType_SelectionChanged" Grid.Column="1" />
+                    <ComboBox x:Name="srchType2" Margin="184,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType2_SelectionChanged" Grid.Column="1" />
+                    <ComboBox x:Name="srchType3" Margin="372,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType3_SelectionChanged" Grid.Column="1" />
+                    <ComboBox x:Name="srchType4" Margin="560,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" Grid.Column="1" />
                     <Separator Height="23" Margin="10,34,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
                     <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="167,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30" Width="21"/>
                     <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="354,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30" Width="21"/>
