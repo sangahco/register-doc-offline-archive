@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SangAh")]
 [assembly: AssemblyProduct("PMIS Offline Archive SNAPSHOT")]
-[assembly: AssemblyCopyright("Copyright ©SangAh 2017")]
+[assembly: AssemblyCopyright("Copyright ©SangAh 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
