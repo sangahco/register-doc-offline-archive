@@ -124,9 +124,8 @@
                         <ColumnDefinition Width="124"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="docReviewStatusLabel" Content="Review Outcome" Margin="18,11,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" HorizontalAlignment="Right" 
-                           Height="26"/>
-                    <TextBlock x:Name="docViewReviewStatus" HorizontalAlignment="Left" Margin="5,16,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" />
+                    <Label x:Name="docReviewStatusLabel" Content="Review Outcome" Margin="10,11,1231,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.ColumnSpan="2"/>
+                    <TextBlock x:Name="docViewReviewStatus" HorizontalAlignment="Left" Margin="16,17,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" />
                     <DataGrid x:Name="reviewDataGridView" Margin="10,42,10.2,159" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserResizeRows="False" MinRowHeight="30" IsReadOnly="True" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Grid.ColumnSpan="2" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" >
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="reviewDataGridViewReviewDate" Binding="{Binding [review_date]}" ClipboardContentBinding="{x:Null}" Header="Reviewed" Width="100"/>
