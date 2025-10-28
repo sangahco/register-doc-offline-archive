@@ -27,22 +27,22 @@
                         <Label x:Name="searchDocTypeLabel" Content="Document Type" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="114"/>
                         <Label x:Name="searchDocDisciplineLabel" Content="Document Discipline" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="147"/>
                         <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,66,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="123"/>
-                        <ComboBox x:Name="srchType" Margin="5,14,23,0" VerticalAlignment="Top" Grid.Column="3" Height="22" DisplayMemberPath="[name]" SelectedValuePath="[code]" Grid.ColumnSpan="2"/>
-                        <ComboBox x:Name="srchDiscipline" Margin="5,41,10,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
-                        <ComboBox x:Name="srchStatus" Margin="5,69,10,0" VerticalAlignment="Top" Grid.Column="3" Height="22"/>
+                        <ComboBox x:Name="srchType" Margin="5,13,0,0" VerticalAlignment="Top" Grid.Column="3" DisplayMemberPath="[name]" SelectedValuePath="[code]" Grid.ColumnSpan="2"/>
+                        <ComboBox x:Name="srchDiscipline" Margin="5,41,10,0" VerticalAlignment="Top" Grid.Column="3"/>
+                        <ComboBox x:Name="srchStatus" Margin="5,69,10,0" VerticalAlignment="Top" Grid.Column="3"/>
                         <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="19,96,0,0" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Left" Width="44"/>
                         <DatePicker x:Name="srchFromDate" Margin="69,97,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="28" HorizontalAlignment="Left"/>
                         <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="0,96,124,0" Grid.Column="1" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right" Width="25"/>
                         <DatePicker x:Name="srchToDate" Margin="0,97,1,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1" Height="28" HorizontalAlignment="Right" Width="119"/>
-                        <Label x:Name="searchHistoryLabel" Content="History" VerticalAlignment="Top" Margin="0,96,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right" Width="57"/>
-                        <ComboBox x:Name="srchHistory" Margin="5,97,10,0" VerticalAlignment="Top" Grid.Column="3" Height="26"/>
-                        <Button x:Name="searchButton" Margin="18,41,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" MinWidth="88">
+                        <Label x:Name="searchHistoryLabel" Content="History" VerticalAlignment="Top" Margin="0,93,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right" Width="57"/>
+                        <ComboBox x:Name="srchHistory" Margin="5,97,10,0" VerticalAlignment="Top" Grid.Column="3"/>
+                        <Button x:Name="searchButton" Margin="83,44,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" MinWidth="88">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="resources/search.png" Width="20" Height="20"  />
                                 <TextBlock x:Name="searchButtonLabel" Text="Search" Margin="5,0,0,0" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
-                        <Button x:Name="searchClearButton" Content="Clear" Margin="18,100,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1"/>
+                        <Button x:Name="searchClearButton" Content="Clear" Margin="83,100,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1"/>
                     </Grid>
                     <DataGrid x:Name="registerDataGridView" Margin="0,134,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" SelectionChanged="registerDataGridView_SelectionChanged">
                         <DataGrid.Columns>
