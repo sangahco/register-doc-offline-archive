@@ -367,7 +367,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">NCP_PMIS</Value>
+      <Value Profile="(Default)">문서관리(자양1재정비촉진구역도시정비형재개발사업)</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("NCP_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("문서관리(자양1재정비촉진구역도시정비형재개발사업)")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
