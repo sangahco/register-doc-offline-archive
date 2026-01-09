@@ -42,7 +42,7 @@
                                 <TextBlock x:Name="searchButtonLabel" Text="Search" Margin="5,0,0,0" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
-                        <Button x:Name="searchClearButton" Content="Clear" Margin="83,100,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1"/>
+                        <Button x:Name="searchClearButton" Content="Clear" Margin="83,100,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1" Width="88"/>
                     </Grid>
                     <DataGrid x:Name="registerDataGridView" Margin="0,134,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" SelectionChanged="registerDataGridView_SelectionChanged">
                         <DataGrid.Columns>
@@ -129,7 +129,7 @@
                     <TextBlock x:Name="docViewReviewStatus" HorizontalAlignment="Left" Margin="5,16,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" />
                     <DataGrid x:Name="reviewDataGridView" Margin="10,42,10.2,159" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserResizeRows="False" MinRowHeight="30" IsReadOnly="True" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Grid.ColumnSpan="2" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" >
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="reviewDataGridViewReviewDate" Binding="{Binding [review_date]}" ClipboardContentBinding="{x:Null}" Header="Reviewed" Width="100"/>
+                            <DataGridTextColumn x:Name="reviewDataGridViewReviewDate" Binding="{Binding [review_date]}" ClipboardContentBinding="{x:Null}" Header="Reviewed" Width="140"/>
                             <DataGridTextColumn x:Name="reviewDataGridViewReviewedBy" Binding="{Binding [reviewed_by]}" ClipboardContentBinding="{x:Null}" Header="Reviewed By" Width="0.6*"/>
                             <DataGridTextColumn x:Name="reviewDataGridViewReviewStatus" Binding="{Binding [review_status]}" ClipboardContentBinding="{x:Null}" Header="Review Outcome" Width="140"/>
                             <DataGridTextColumn x:Name="reviewDataGridViewReviewNote" Binding="{Binding [review_note]}" ClipboardContentBinding="{x:Null}" Header="Comment" Width="*"/>

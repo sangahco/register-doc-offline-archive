@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="pmis_api_url" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://nproject.kspmis.com</Value>
+      <Value Profile="(Default)">https://coupang.kspmis.com</Value>
     </Setting>
     <Setting Name="pmis_project_code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">N_PMIS</Value>
+      <Value Profile="(Default)">GCH1</Value>
     </Setting>
     <Setting Name="pmis_auth_key" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -341,7 +341,7 @@
       <Value Profile="(Default)">register</Value>
     </Setting>
     <Setting Name="sqlite_db_location" Type="System.String" Scope="User">
-      <Value Profile="(Default)">data/nproject.db</Value>
+      <Value Profile="(Default)">data/gch1.db</Value>
     </Setting>
     <Setting Name="db_type" Type="System.String" Scope="User">
       <Value Profile="(Default)">sqlite</Value>
@@ -367,7 +367,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">NPROJECT</Value>
+      <Value Profile="(Default)">쿠팡 김천 FC 신축공사</Value>
     </Setting>
   </Settings>
 </SettingsFile>
