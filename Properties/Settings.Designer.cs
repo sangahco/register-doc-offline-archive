@@ -25,7 +25,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://coupang.kspmis.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://nppia.kspmis.com")]
         public string pmis_api_url {
             get {
                 return ((string)(this["pmis_api_url"]));
@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("GCH1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("CAICAIR")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -309,7 +309,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/gch1.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/caicair.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));
@@ -333,7 +333,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ko_KR")]
+        [global::System.Configuration.DefaultSettingValueAttribute("en_US")]
         public string language {
             get {
                 return ((string)(this["language"]));
@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("쿠팡 김천 FC 신축공사")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Techo International Airport Project")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
