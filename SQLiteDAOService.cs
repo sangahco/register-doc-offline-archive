@@ -117,32 +117,60 @@ namespace pmis
             }
         }
 
-        public void ImportDocumentData(RegisterDocument d)
+        public void ImportDocumentData(List<RegisterDocument> docs, Action<RegisterDocument> progressCallback)
         {
-            string filepath = Path.Combine(projectFolder, @"register.import.sqlite.sql");
-            string sql = File.ReadAllText(filepath);
+            using (var transaction = m_dbConnection.BeginTransaction())
+            {
+                string filepath = Path.Combine(projectFolder, @"register.import.sqlite.sql");
+                string sql = File.ReadAllText(filepath);
 
-            SQLiteCommand cmd = new SQLiteCommand(sql, m_dbConnection);
-            cmd.Parameters.AddWithValue("@docno", d.DocumentNumber);
-            cmd.Parameters.AddWithValue("@title", d.Title);
-            cmd.Parameters.AddWithValue("@discipline", d.Discipline);
-            cmd.Parameters.AddWithValue("@revision", d.Revision);
-            cmd.Parameters.AddWithValue("@revision_date", d.RevisionDate);
-            cmd.Parameters.AddWithValue("@version", d.Version);
-            cmd.Parameters.AddWithValue("@status", d.Status);
-            cmd.Parameters.AddWithValue("@int_cd", d.InternalNumber);
-            cmd.Parameters.AddWithValue("@review_status", d.ReviewStatus);
-            cmd.Parameters.AddWithValue("@registered_by", d.RegisteredBy);
-            cmd.Parameters.AddWithValue("@registered", d.Registered);
-            cmd.Parameters.AddWithValue("@organization", d.Organization);
-            cmd.Parameters.AddWithValue("@descr", d.Note);
-            cmd.Parameters.AddWithValue("@type", d.Type);
-            cmd.Parameters.AddWithValue("@current", d.Current);
-            cmd.Parameters.AddWithValue("@internal_codes", d.InternalCodes);
+                using (var cmd = new SQLiteCommand(sql, m_dbConnection, transaction))
+                {
+                    // Create parameters ONCE
+                    cmd.Parameters.Add("@docno", DbType.String);
+                    cmd.Parameters.Add("@title", DbType.String);
+                    cmd.Parameters.Add("@discipline", DbType.String);
+                    cmd.Parameters.Add("@revision", DbType.String);
+                    cmd.Parameters.Add("@revision_date", DbType.String);
+                    cmd.Parameters.Add("@version", DbType.String);
+                    cmd.Parameters.Add("@status", DbType.String);
+                    cmd.Parameters.Add("@int_cd", DbType.String);
+                    cmd.Parameters.Add("@review_status", DbType.String);
+                    cmd.Parameters.Add("@registered_by", DbType.String);
+                    cmd.Parameters.Add("@registered", DbType.String);
+                    cmd.Parameters.Add("@organization", DbType.String);
+                    cmd.Parameters.Add("@descr", DbType.String);
+                    cmd.Parameters.Add("@type", DbType.String);
+                    cmd.Parameters.Add("@current", DbType.String);
+                    cmd.Parameters.Add("@internal_codes", DbType.String);
 
-            cmd.ExecuteNonQuery();
-            cmd.Dispose();
-            
+                    foreach (var d in docs)
+                    {
+                        // Assign values only
+                        cmd.Parameters["@docno"].Value = d.DocumentNumber;
+                        cmd.Parameters["@title"].Value = d.Title;
+                        cmd.Parameters["@discipline"].Value = d.Discipline;
+                        cmd.Parameters["@revision"].Value = d.Revision;
+                        cmd.Parameters["@revision_date"].Value = d.RevisionDate;
+                        cmd.Parameters["@version"].Value = d.Version;
+                        cmd.Parameters["@status"].Value = d.Status;
+                        cmd.Parameters["@int_cd"].Value = d.InternalNumber;
+                        cmd.Parameters["@review_status"].Value = d.ReviewStatus;
+                        cmd.Parameters["@registered_by"].Value = d.RegisteredBy;
+                        cmd.Parameters["@registered"].Value = d.Registered;
+                        cmd.Parameters["@organization"].Value = d.Organization;
+                        cmd.Parameters["@descr"].Value = d.Note;
+                        cmd.Parameters["@type"].Value = d.Type;
+                        cmd.Parameters["@current"].Value = d.Current;
+                        cmd.Parameters["@internal_codes"].Value = d.InternalCodes;
+
+                        cmd.ExecuteNonQuery();
+                        progressCallback?.Invoke(d);
+                    }
+                }
+
+                transaction.Commit();
+            }
         }
 
         public RegisterDocument LoadDocument(string docno, string version = null)
@@ -330,22 +358,42 @@ namespace pmis
             command.Dispose();
         }
 
-        public void ImportReviewInfoData(ReviewInfo d)
+        public void ImportReviewInfoData(List<ReviewInfo> docs, Action<ReviewInfo> progressCallback)
         {
-            string filepath = Path.Combine(projectFolder, @"review.import.sqlite.sql");
-            string sql = File.ReadAllText(filepath);
-            
-            SQLiteCommand cmd = new SQLiteCommand(sql, m_dbConnection);
-            cmd.Parameters.AddWithValue("@docno", d.DocumentNumber);
-            cmd.Parameters.AddWithValue("@version", d.DocumentVersion);
-            cmd.Parameters.AddWithValue("@review_date", d.ReviewDate);
-            cmd.Parameters.AddWithValue("@review_status", d.ReviewStatus);
-            cmd.Parameters.AddWithValue("@review_note", d.ReviewNote);
-            cmd.Parameters.AddWithValue("@reviewed_by", d.ReviewedBy);
+            using (SQLiteTransaction transaction = m_dbConnection.BeginTransaction())
+            {
+                string filepath = Path.Combine(projectFolder, @"review.import.sqlite.sql");
+                string sql = File.ReadAllText(filepath);
 
-            cmd.ExecuteNonQuery();
-            cmd.Dispose();
+                using (var cmd = new SQLiteCommand(sql, m_dbConnection, transaction))
+                {
+                    // Create parameters ONCE
+                    cmd.Parameters.Add("@docno", DbType.String);
+                    cmd.Parameters.Add("@version", DbType.String);
+                    cmd.Parameters.Add("@review_date", DbType.String);
+                    cmd.Parameters.Add("@review_status", DbType.String);
+                    cmd.Parameters.Add("@review_note", DbType.String);
+                    cmd.Parameters.Add("@reviewed_by", DbType.String);
+
+                    foreach (var d in docs)
+                    {
+                        // Only update values
+                        cmd.Parameters["@docno"].Value = d.DocumentNumber;
+                        cmd.Parameters["@version"].Value = d.DocumentVersion;
+                        cmd.Parameters["@review_date"].Value = d.ReviewDate;
+                        cmd.Parameters["@review_status"].Value = d.ReviewStatus;
+                        cmd.Parameters["@review_note"].Value = d.ReviewNote;
+                        cmd.Parameters["@reviewed_by"].Value = d.ReviewedBy;
+
+                        cmd.ExecuteNonQuery();
+                        progressCallback?.Invoke(d);
+                    }
+                }
+
+                transaction.Commit();
+            }
         }
+
 
         private void ConfigureDatabasePath()
         {

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pmis"
         mc:Ignorable="d"
-        Title="{Binding ApplicationTitle}" Height="796" Width="1400" Icon="resources/sangah_logo_16.ico" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinWidth="1060" MinHeight="622">
+        Title="{Binding ApplicationTitle}" Height="796" Width="1400" Icon="resources/sangah_logo_16.ico" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinWidth="1400" MinHeight="796.4">
     <Grid>
         <TabControl x:Name="tabControl1" Margin="10,31,10,10" SelectionChanged="tabControl1_SelectionChanged">
             <TabItem x:Name="registerTabPage" Header="Register">
@@ -33,18 +33,18 @@
                         <ComboBox x:Name="srchDiscipline" Margin="5,52,10,0" VerticalAlignment="Top" Grid.Column="3"/>
                         <ComboBox x:Name="srchStatus" Margin="5,84,10,0" VerticalAlignment="Top" Grid.Column="3"/>
                         <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="0,144,4,0" HorizontalContentAlignment="Right" HorizontalAlignment="Right"/>
-                        <DatePicker x:Name="srchFromDate" Margin="1,145,76,0" VerticalAlignment="Top" Grid.Column="1"/>
+                        <DatePicker x:Name="srchFromDate" Margin="1,145,3,0" VerticalAlignment="Top" Grid.Column="1"/>
                         <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="116,144,0,0" Grid.Column="2" HorizontalContentAlignment="Right" RenderTransformOrigin="8.094,0.667"/>
-                        <DatePicker x:Name="srchToDate" Margin="5,145,81,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="3"/>
+                        <DatePicker x:Name="srchToDate" Margin="5,145,10,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="3"/>
                         <Label x:Name="searchHistoryLabel" Content="History" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,113,0,0" Grid.Column="2" HorizontalContentAlignment="Right"/>
                         <ComboBox x:Name="srchHistory" Margin="5,115,10,0" VerticalAlignment="Top" Grid.Column="3"/>
-                        <Button x:Name="searchButton" Margin="18.2,55,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Width="104" Height="36" VerticalAlignment="Top">
+                        <Button x:Name="searchButton" Margin="18,52,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="#FF3FD778" Grid.Column="4" HorizontalAlignment="Left" Width="132" Height="40" VerticalAlignment="Top">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="resources/search.png" Width="20" Height="20"  />
                                 <TextBlock x:Name="searchButtonLabel" Text="Search" Margin="5,0,0,0" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
-                        <Button x:Name="searchClearButton" Content="Clear" Margin="18,97,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1" />
+                        <Button x:Name="searchClearButton" Content="Clear" Margin="18,97,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1" Width="132" BorderBrush="#FFD20202" />
                     </Grid>
                     <DataGrid x:Name="registerDataGridView" Margin="0,188,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" Grid.ColumnSpan="2">
                         <DataGrid.Columns>
@@ -63,14 +63,14 @@
                         </DataGrid.Columns>
                     </DataGrid>
                     <Label x:Name="searchDocTypeLabel" Content="Document Type" VerticalAlignment="Top" Margin="0,8,8,0" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Height="30"/>
-                    <ComboBox x:Name="srchType" Margin="0,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType_SelectionChanged" Grid.Column="1" />
-                    <ComboBox x:Name="srchType2" Margin="184,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType2_SelectionChanged" Grid.Column="1" />
-                    <ComboBox x:Name="srchType3" Margin="372,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" SelectionChanged="srchType3_SelectionChanged" Grid.Column="1" />
-                    <ComboBox x:Name="srchType4" Margin="560,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="170" Grid.Column="1" />
+                    <ComboBox x:Name="srchType" Margin="0,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="205" SelectionChanged="srchType_SelectionChanged" Grid.Column="1" />
+                    <ComboBox x:Name="srchType2" Margin="226,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="205" SelectionChanged="srchType2_SelectionChanged" Grid.Column="1" />
+                    <ComboBox x:Name="srchType3" Margin="452,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="205" SelectionChanged="srchType3_SelectionChanged" Grid.Column="1" />
+                    <ComboBox x:Name="srchType4" Margin="678,12,0,0" VerticalAlignment="Top" DisplayMemberPath="[name]" SelectedValuePath="[code]" HorizontalAlignment="Left" Width="205" Grid.Column="1" />
                     <Separator Height="23" Margin="10,34,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                    <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="167,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30" Width="21"/>
-                    <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="354,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30" Width="21"/>
-                    <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="542,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30" Width="21"/>
+                    <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30"/>
+                    <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="431,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30"/>
+                    <Label Content="&gt;" Grid.Column="1" HorizontalAlignment="Left" Margin="657,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="30"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="detailTabPage" Header="Detail">
@@ -140,8 +140,8 @@
                     <TextBlock x:Name="docViewReviewStatus" HorizontalAlignment="Left" Margin="5,16,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" />
                     <DataGrid x:Name="reviewDataGridView" Margin="10,42,10.2,159" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserResizeRows="False" MinRowHeight="30" IsReadOnly="True" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Grid.ColumnSpan="2" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" >
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="reviewDataGridViewReviewDate" Binding="{Binding [review_date]}" ClipboardContentBinding="{x:Null}" Header="Reviewed" Width="100"/>
-                            <DataGridTextColumn x:Name="reviewDataGridViewReviewedBy" Binding="{Binding [reviewed_by]}" ClipboardContentBinding="{x:Null}" Header="Reviewed By" Width="0.6*"/>
+                            <DataGridTextColumn x:Name="reviewDataGridViewReviewDate" Binding="{Binding [review_date]}" ClipboardContentBinding="{x:Null}" Header="Reviewed" Width="120"/>
+                            <DataGridTextColumn x:Name="reviewDataGridViewReviewedBy" Binding="{Binding [reviewed_by]}" ClipboardContentBinding="{x:Null}" Header="Reviewed By" Width="0.5*"/>
                             <DataGridTextColumn x:Name="reviewDataGridViewReviewStatus" Binding="{Binding [review_status]}" ClipboardContentBinding="{x:Null}" Header="Review Outcome" Width="140"/>
                             <DataGridTextColumn x:Name="reviewDataGridViewReviewNote" Binding="{Binding [review_note]}" ClipboardContentBinding="{x:Null}" Header="Comment" Width="*"/>
                         </DataGrid.Columns>
