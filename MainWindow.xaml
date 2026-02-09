@@ -10,7 +10,7 @@
         <TabControl x:Name="tabControl1" Margin="10,31,10,10" SelectionChanged="tabControl1_SelectionChanged">
             <TabItem x:Name="registerTabPage" Header="Register">
                 <Grid Background="White">
-                    <Grid Margin="0,0,0,390" HorizontalAlignment="Left" Width="920">
+                    <Grid Margin="0,0,0,558" HorizontalAlignment="Left" Width="1097">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="146"/>
                             <ColumnDefinition Width="223"/>
@@ -18,44 +18,44 @@
                             <ColumnDefinition Width="219"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Label x:Name="searchDocNumberLabel" Content="Document Number" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,3,0" HorizontalContentAlignment="Right" Height="30" Width="138"/>
+                        <Label x:Name="searchDocNumberLabel" Content="Document Number" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,3,0" HorizontalContentAlignment="Right" Height="30"/>
                         <TextBox x:Name="srchNumber" Height="23" Margin="2,13,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchDocTitleLabel" Content="Document Title" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,3,0" HorizontalContentAlignment="Right" Height="30" Width="111"/>
+                        <Label x:Name="searchDocTitleLabel" Content="Document Title" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,3,0" HorizontalContentAlignment="Right" Height="30"/>
                         <TextBox x:Name="srchTitle" Height="23" Margin="2,41,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchRegisteredByLabel" Content="Registered By" VerticalAlignment="Top" Margin="0,66,3,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30" Width="100"/>
+                        <Label x:Name="searchRegisteredByLabel" Content="Registered By" VerticalAlignment="Top" Margin="0,66,3,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30"/>
                         <TextBox x:Name="srchRegisteredBy" Height="23" Margin="2,69,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-                        <Label x:Name="searchDocTypeLabel" Content="Document Type" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="114"/>
-                        <Label x:Name="searchDocDisciplineLabel" Content="Document Discipline" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="147"/>
-                        <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,66,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" Width="123"/>
+                        <Label x:Name="searchDocTypeLabel" Content="Document Type" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30"/>
+                        <Label x:Name="searchDocDisciplineLabel" Content="Document Discipline" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,38,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30"/>
+                        <Label x:Name="searchDocStatusLabel" Content="Document Status" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,66,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30"/>
                         <ComboBox x:Name="srchType" Margin="5,13,0,0" VerticalAlignment="Top" Grid.Column="3" DisplayMemberPath="[name]" SelectedValuePath="[code]" Grid.ColumnSpan="2"/>
                         <ComboBox x:Name="srchDiscipline" Margin="5,41,10,0" VerticalAlignment="Top" Grid.Column="3"/>
                         <ComboBox x:Name="srchStatus" Margin="5,69,10,0" VerticalAlignment="Top" Grid.Column="3"/>
-                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="19,96,0,0" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Left" Width="44"/>
+                        <Label x:Name="searchFromLabel" Content="From" VerticalAlignment="Top" Margin="19,96,0,0" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Left"/>
                         <DatePicker x:Name="srchFromDate" Margin="69,97,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="28" HorizontalAlignment="Left"/>
-                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="0,96,124,0" Grid.Column="1" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right" Width="25"/>
+                        <Label x:Name="searchToLabel" Content="To" VerticalAlignment="Top" Margin="0,96,124,0" Grid.Column="1" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right"/>
                         <DatePicker x:Name="srchToDate" Margin="0,97,1,0" VerticalAlignment="Top" RenderTransformOrigin="2.216,0.833" Grid.Column="1" Height="28" HorizontalAlignment="Right" Width="119"/>
-                        <Label x:Name="searchHistoryLabel" Content="History" VerticalAlignment="Top" Margin="0,93,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right" Width="57"/>
+                        <Label x:Name="searchHistoryLabel" Content="History" VerticalAlignment="Top" Margin="0,93,0,0" Grid.Column="2" HorizontalContentAlignment="Right" Height="30" HorizontalAlignment="Right"/>
                         <ComboBox x:Name="srchHistory" Margin="5,97,10,0" VerticalAlignment="Top" Grid.Column="3"/>
-                        <Button x:Name="searchButton" Margin="83,44,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="Gray" Grid.Column="4" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" MinWidth="88">
+                        <Button x:Name="searchButton" Margin="187,44,0,0" Click="searchButton_Click" Background="#FFDDDDDD" BorderBrush="#FF05D505" Grid.Column="4" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" MinWidth="88" Width="164">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="resources/search.png" Width="20" Height="20"  />
                                 <TextBlock x:Name="searchButtonLabel" Text="Search" Margin="5,0,0,0" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
-                        <Button x:Name="searchClearButton" Content="Clear" Margin="83,100,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1" Width="88"/>
+                        <Button x:Name="searchClearButton" Content="Clear" Margin="187,100,0,0" Click="searchClearButton_Click" Grid.Column="4" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,1" Width="164" BorderBrush="#FFE90000"/>
                     </Grid>
                     <DataGrid x:Name="registerDataGridView" Margin="0,134,0,0" IsReadOnly="True" CanUserResizeRows="False" HeadersVisibility="Column" MouseDoubleClick="registerDataGridView_MouseDoubleClick" MinRowHeight="35" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" SelectionChanged="registerDataGridView_SelectionChanged">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="doclist_docno" Binding="{Binding [docno]}" ClipboardContentBinding="{x:Null}" Header="Document Number" Width="0.4*"/>
-                            <DataGridTextColumn x:Name="doclist_title" Binding="{Binding [title]}" ClipboardContentBinding="{x:Null}" Header="Title" Width="0.6*"/>
-                            <DataGridTextColumn x:Name="doclist_revision" Binding="{Binding [revision]}" ClipboardContentBinding="{x:Null}" Header="Revision" Width="60"/>
-                            <DataGridTextColumn x:Name="doclist_version" Binding="{Binding [doc_version]}" ClipboardContentBinding="{x:Null}" Header="Version" Width="60"/>
-                            <DataGridTextColumn x:Name="doclist_revision_date" Binding="{Binding [revision_date]}" ClipboardContentBinding="{x:Null}" Header="Revision Date" Width="100"/>
-                            <DataGridTextColumn x:Name="doclist_organization" Binding="{Binding [organization]}" ClipboardContentBinding="{x:Null}" Header="Organization" Visibility="Hidden" Width="90"/>
+                            <DataGridTextColumn x:Name="doclist_docno" Binding="{Binding [docno]}" ClipboardContentBinding="{x:Null}" Header="Document Number" Width="0.35*" FontWeight="Bold"/>
+                            <DataGridTextColumn x:Name="doclist_title" Binding="{Binding [title]}" ClipboardContentBinding="{x:Null}" Header="Title" Width="0.65*"/>
+                            <DataGridTextColumn x:Name="doclist_revision" Binding="{Binding [revision]}" ClipboardContentBinding="{x:Null}" Header="Revision" Width="70" CanUserResize="False"/>
+                            <DataGridTextColumn x:Name="doclist_version" Binding="{Binding [doc_version]}" ClipboardContentBinding="{x:Null}" Header="Version" Width="60" CanUserResize="False"/>
+                            <DataGridTextColumn x:Name="doclist_revision_date" Binding="{Binding [revision_date]}" ClipboardContentBinding="{x:Null}" Header="Revision Date" Width="100" CanUserResize="False"/>
+                            <DataGridTextColumn x:Name="doclist_organization" Binding="{Binding [organization]}" ClipboardContentBinding="{x:Null}" Header="Organization" Width="120" MinWidth="120"/>
                             <DataGridTextColumn x:Name="doclist_type" Binding="{Binding [doc_type]}" ClipboardContentBinding="{x:Null}" Header="Type" Width="150"/>
                             <DataGridTextColumn x:Name="doclist_review_status" Binding="{Binding [review_status]}" ClipboardContentBinding="{x:Null}" Header="Review Status" Visibility="Hidden" Width="100"/>
                             <DataGridTextColumn x:Name="doclist_registered_by" Binding="{Binding [registered_by]}" ClipboardContentBinding="{x:Null}" Header="Registered By" Width="150"/>
-                            <DataGridTextColumn x:Name="doclist_registered" Binding="{Binding [registered]}" ClipboardContentBinding="{x:Null}" Header="Registered" Width="100"/>
+                            <DataGridTextColumn x:Name="doclist_registered" Binding="{Binding [registered]}" ClipboardContentBinding="{x:Null}" Header="Registered" Width="100" CanUserResize="False"/>
                             <DataGridTextColumn x:Name="doclist_discipline" Binding="{Binding [discipline]}" ClipboardContentBinding="{x:Null}" Header="Discipline" Visibility="Hidden" Width="78"/>
                             <DataGridTextColumn x:Name="doclist_status" Binding="{Binding [doc_status]}" ClipboardContentBinding="{x:Null}" Header="Status" Width="150"/>
                         </DataGrid.Columns>
@@ -67,35 +67,36 @@
                     <GroupBox x:Name="detailGeneralGroupBox" Header="Data" Margin="10,10,10,0" VerticalAlignment="Top" Height="202">
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="123*"/>
-                                <ColumnDefinition Width="481*"/>
-                                <ColumnDefinition Width="389*"/>
+                                <ColumnDefinition Width="165*"/>
+                                <ColumnDefinition Width="538*"/>
+                                <ColumnDefinition Width="113*"/>
+                                <ColumnDefinition Width="518*"/>
                             </Grid.ColumnDefinitions>
-                            <Label x:Name="docNumberLabel" Content="Number" Margin="0,7,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
-                            <Label x:Name="docTitleLabel" Content="Title" Margin="0,35,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
-                            <Label x:Name="docTypeLabel" Content="Type" Margin="0,63,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
-                            <Label x:Name="docStatusLabel" Content="Status" Margin="0,91,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
-                            <Label x:Name="docDisciplineLabel" Content="Discipline" Margin="0,119,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
-                            <Label x:Name="docIntNumberLabel" Content="Internal Number" Margin="0,147,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
-                            <TextBlock x:Name="docViewDocNumber" HorizontalAlignment="Left" Margin="2,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
-                            <TextBlock x:Name="docViewTitle" HorizontalAlignment="Left" Margin="2,40,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
-                            <TextBlock x:Name="docViewType" HorizontalAlignment="Left" Margin="2,68,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
-                            <TextBlock x:Name="docViewStatus" HorizontalAlignment="Left" Margin="2,96,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
-                            <TextBlock x:Name="docViewDiscipline" HorizontalAlignment="Left" Margin="2,124,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
-                            <TextBlock x:Name="docViewIntNumber" HorizontalAlignment="Left" Margin="2,152,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
-                            <Label x:Name="docRevisionLabel" Content="Revision" HorizontalAlignment="Right" Margin="0,7,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="1"/>
-                            <Label x:Name="docRevisionDateLabel" Content="Revision Date" Margin="0,35,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Grid.Column="1"/>
-                            <Label x:Name="docVersionLabel" Content="Version" HorizontalAlignment="Right" Margin="0,63,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="1"/>
-                            <Label x:Name="docRegisteredLabel" Content="Registered" HorizontalAlignment="Right" Margin="0,91,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="1"/>
-                            <Label x:Name="docRegisteredByLabel" Content="Registered By" Margin="0,119,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Grid.Column="1"/>
-                            <Label x:Name="docOrganizationLabel" Content="Organization" HorizontalAlignment="Right" Margin="0,147,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="1"/>
-                            <TextBlock x:Name="docViewRevision" HorizontalAlignment="Left" Margin="1,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="2"/>
-                            <TextBlock x:Name="docViewRevisionDate" HorizontalAlignment="Left" Margin="1,40,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="2"/>
-                            <TextBlock x:Name="docViewVersion" HorizontalAlignment="Left" Margin="1,68,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="2"/>
-                            <TextBlock x:Name="docViewRegistered" HorizontalAlignment="Left" Margin="1,96,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="2"/>
-                            <TextBlock x:Name="docViewRegisteredBy" HorizontalAlignment="Left" Margin="1,124,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="2"/>
-                            <TextBlock x:Name="docViewOrganization" HorizontalAlignment="Left" Margin="1,152,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="2"/>
-                            <TextBlock x:Name="docViewCurrent" HorizontalAlignment="Left" Margin="30,68,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="2"/>
+                            <Label x:Name="docNumberLabel" Content="Number" Margin="0,7,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30"/>
+                            <Label x:Name="docTitleLabel" Content="Title" Margin="0,35,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30"/>
+                            <Label x:Name="docTypeLabel" Content="Type" Margin="0,63,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30"/>
+                            <Label x:Name="docStatusLabel" Content="Status" Margin="0,91,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30"/>
+                            <Label x:Name="docDisciplineLabel" Content="Discipline" Margin="0,119,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="30"/>
+                            <Label x:Name="docIntNumberLabel" Content="Internal Number" Margin="0,147,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Height="28"/>
+                            <TextBlock x:Name="docViewDocNumber" HorizontalAlignment="Left" Margin="2,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Height="20"/>
+                            <TextBlock x:Name="docViewTitle" HorizontalAlignment="Left" Margin="2,40,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Height="20" TextTrimming="CharacterEllipsis" />
+                            <TextBlock x:Name="docViewType" HorizontalAlignment="Left" Margin="2,68,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Height="20"/>
+                            <TextBlock x:Name="docViewStatus" HorizontalAlignment="Left" Margin="2,96,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Height="20"/>
+                            <TextBlock x:Name="docViewDiscipline" HorizontalAlignment="Left" Margin="2,124,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Height="20"/>
+                            <TextBlock x:Name="docViewIntNumber" HorizontalAlignment="Left" Margin="2,152,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Height="20"/>
+                            <Label x:Name="docRevisionLabel" Content="Revision" HorizontalAlignment="Right" Margin="0,7,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="2" Height="30"/>
+                            <Label x:Name="docRevisionDateLabel" Content="Revision Date" Margin="0,35,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Grid.Column="2" Height="30"/>
+                            <Label x:Name="docVersionLabel" Content="Version" HorizontalAlignment="Right" Margin="0,63,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="2" Height="30"/>
+                            <Label x:Name="docRegisteredLabel" Content="Registered" HorizontalAlignment="Right" Margin="0,91,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="2" Height="30"/>
+                            <Label x:Name="docRegisteredByLabel" Content="Registered By" Margin="0,119,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Grid.Column="2" Height="30"/>
+                            <Label x:Name="docOrganizationLabel" Content="Organization" HorizontalAlignment="Right" Margin="0,147,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" Grid.Column="2" Height="28"/>
+                            <TextBlock x:Name="docViewRevision" HorizontalAlignment="Left" Margin="1,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="3" Height="20"/>
+                            <TextBlock x:Name="docViewRevisionDate" HorizontalAlignment="Left" Margin="1,40,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="3" Height="20"/>
+                            <TextBlock x:Name="docViewVersion" HorizontalAlignment="Left" Margin="1,68,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="3" Height="20"/>
+                            <TextBlock x:Name="docViewRegistered" HorizontalAlignment="Left" Margin="1,96,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="3" Height="20"/>
+                            <TextBlock x:Name="docViewRegisteredBy" HorizontalAlignment="Left" Margin="1,124,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="3" Height="20"/>
+                            <TextBlock x:Name="docViewOrganization" HorizontalAlignment="Left" Margin="1,152,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="3" Height="20"/>
+                            <TextBlock x:Name="docViewCurrent" HorizontalAlignment="Left" Margin="37,68,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="3" Height="20"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox x:Name="docNoteLabel" Header="Note" Margin="10,217,10,180">
@@ -121,21 +122,35 @@
             <TabItem x:Name="reviewDetailTabPage" Header="Review Detail">
                 <Grid Background="White">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="124"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="141"/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="docReviewStatusLabel" Content="Review Outcome" Margin="18,11,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" HorizontalAlignment="Right" 
+                    <Label x:Name="docReviewStatusLabel" Content="Review Outcome" Margin="0,11,0,0" VerticalAlignment="Top" Foreground="#FF727272" HorizontalContentAlignment="Right" HorizontalAlignment="Right" 
                            Height="26"/>
-                    <TextBlock x:Name="docViewReviewStatus" HorizontalAlignment="Left" Margin="5,16,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" />
-                    <DataGrid x:Name="reviewDataGridView" Margin="10,42,10.2,159" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserResizeRows="False" MinRowHeight="30" IsReadOnly="True" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Grid.ColumnSpan="2" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" >
+                    <TextBlock x:Name="docViewReviewStatus" HorizontalAlignment="Left" Margin="5,16,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Height="20" />
+                    <DataGrid x:Name="reviewDataGridView" Margin="10,42,10,159" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserResizeRows="False" MinRowHeight="30" IsReadOnly="True" HorizontalGridLinesBrush="#FFD1D1D1" VerticalGridLinesBrush="#FFD1D1D1" Grid.ColumnSpan="2" >
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="VerticalContentAlignment" Value="Top"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                            </Style>
+                        </DataGrid.CellStyle>
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="reviewDataGridViewReviewDate" Binding="{Binding [review_date]}" ClipboardContentBinding="{x:Null}" Header="Reviewed" Width="140"/>
-                            <DataGridTextColumn x:Name="reviewDataGridViewReviewedBy" Binding="{Binding [reviewed_by]}" ClipboardContentBinding="{x:Null}" Header="Reviewed By" Width="0.6*"/>
-                            <DataGridTextColumn x:Name="reviewDataGridViewReviewStatus" Binding="{Binding [review_status]}" ClipboardContentBinding="{x:Null}" Header="Review Outcome" Width="140"/>
-                            <DataGridTextColumn x:Name="reviewDataGridViewReviewNote" Binding="{Binding [review_note]}" ClipboardContentBinding="{x:Null}" Header="Comment" Width="*"/>
+                            <DataGridTextColumn x:Name="reviewDataGridViewReviewedBy" Binding="{Binding [reviewed_by]}" ClipboardContentBinding="{x:Null}" Header="Reviewed By" Width="0.35*"/>
+                            <DataGridTextColumn x:Name="reviewDataGridViewReviewStatus" Binding="{Binding [review_status]}" ClipboardContentBinding="{x:Null}" Header="Review Outcome" Width="140" CanUserResize="False"/>
+                            <DataGridTextColumn x:Name="reviewDataGridViewReviewNote" Binding="{Binding [review_note]}" ClipboardContentBinding="{x:Null}" Header="Comment" Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextWrapping" Value="Wrap"/>
+                                        <Setter Property="VerticalAlignment" Value="Top"/>
+                                        <Setter Property="Padding" Value="4,0,4,0"/>  <!-- restore left/right padding -->
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <DataGrid x:Name="reviewFileDataGrid" Margin="10,0,10.2,10" Height="144" VerticalAlignment="Bottom" IsReadOnly="True" HorizontalGridLinesBrush="Gray" VerticalGridLinesBrush="Gray" HeadersVisibility="Column" MouseUp="fileManagerDataGridView_MouseUp" MouseDoubleClick="fileManagerDataGridView_MouseDoubleClick" Grid.ColumnSpan="2" MinRowHeight="30" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" >
+                    <DataGrid x:Name="reviewFileDataGrid" Margin="10,0,10,10" Height="144" VerticalAlignment="Bottom" IsReadOnly="True" HorizontalGridLinesBrush="Gray" VerticalGridLinesBrush="Gray" HeadersVisibility="Column" MouseUp="fileManagerDataGridView_MouseUp" MouseDoubleClick="fileManagerDataGridView_MouseDoubleClick" Grid.ColumnSpan="2" MinRowHeight="30" CellStyle="{StaticResource Body_Content_DataGrid_Centering}" >
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="reviewFileDataGridFilename" Binding="{Binding FileName}" ClipboardContentBinding="{x:Null}" Header="File Name" Width="*"/>
                             <DataGridTextColumn x:Name="reviewFileDataGridFilesize" Binding="{Binding FileHumanSize}" ClipboardContentBinding="{x:Null}" Header="File Size" Width="0.3*"/>
