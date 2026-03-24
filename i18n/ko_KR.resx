@@ -235,10 +235,10 @@
     <value>의견</value>
   </data>
   <data name="reviewed" xml:space="preserve">
-    <value>검토자</value>
+    <value>검토일자</value>
   </data>
   <data name="reviewed_by" xml:space="preserve">
-    <value>검토일자</value>
+    <value>검토자</value>
   </data>
   <data name="review_outcome" xml:space="preserve">
     <value>검토결과</value>

@@ -96,12 +96,7 @@ namespace pmis
         {
             try
             {
-                foreach (ReviewInfo d in docs)
-                {
-                    _dao.ImportReviewInfoData(d);
-                    //Console.WriteLine("Adding review data: {0}", d);
-                    OnReviewInfoImported(d);
-                }
+                _dao.ImportReviewInfoData(docs, OnReviewInfoImported);
             }
             catch (Exception e)
             {
@@ -124,12 +119,12 @@ namespace pmis
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authkey);
                     var values = new Dictionary<string, string> {
                         { "pjt_cd", project },
-                        { "pageScale", "200" },
+                        { "pageScale", "2000" },
                         { "pageNo", "1" }
                     };
 
-                    var page = 1;
-                    var total = 999;
+                    var page = 440;
+                    var total = 9999;
                     while (page <= total)
                     {
                         values["pageNo"] = "" + page;

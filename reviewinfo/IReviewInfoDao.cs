@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
 
 namespace pmis.reviewinfo
 {
@@ -8,7 +10,7 @@ namespace pmis.reviewinfo
 
         void DeleteReviewInfo();
 
-        void ImportReviewInfoData(ReviewInfo d);
+        void ImportReviewInfoData(List<ReviewInfo> docs, Action<ReviewInfo> progressCallback);
 
         int LoadReviewInfoCount();
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 
 namespace pmis.register
@@ -16,7 +17,7 @@ namespace pmis.register
         /// <summary>
         /// Import documents from outer source
         /// </summary>
-        void ImportDocumentData(RegisterDocument d);
+        void ImportDocumentData(List<RegisterDocument> docs, Action<RegisterDocument> progressCallback);
 
         /// <summary>
         /// Search through all documents

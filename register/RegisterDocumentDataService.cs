@@ -208,12 +208,7 @@ namespace pmis
         {
             try
             {
-                foreach (RegisterDocument d in docs)
-                {
-                    daoService.ImportDocumentData(d);
-                    //Console.WriteLine("Adding register data: {0}", d);
-                    OnRegisterDocumentImported(d);
-                }
+                daoService.ImportDocumentData(docs, OnRegisterDocumentImported);
             }
             catch (Exception e)
             {

@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="pmis_api_url" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://coupang.kspmis.com</Value>
+      <Value Profile="(Default)">https://nppia.kspmis.com</Value>
     </Setting>
     <Setting Name="pmis_project_code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">GCH1</Value>
+      <Value Profile="(Default)">CAICAIR</Value>
     </Setting>
     <Setting Name="pmis_auth_key" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -341,13 +341,13 @@
       <Value Profile="(Default)">register</Value>
     </Setting>
     <Setting Name="sqlite_db_location" Type="System.String" Scope="User">
-      <Value Profile="(Default)">data/gch1.db</Value>
+      <Value Profile="(Default)">data/caicair.db</Value>
     </Setting>
     <Setting Name="db_type" Type="System.String" Scope="User">
       <Value Profile="(Default)">sqlite</Value>
     </Setting>
     <Setting Name="language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">ko_KR</Value>
+      <Value Profile="(Default)">en_US</Value>
     </Setting>
     <Setting Name="picture_folder_uri" Type="System.String" Scope="User">
       <Value Profile="(Default)">pictures</Value>
@@ -367,7 +367,7 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="current_profile" Type="System.String" Scope="User">
-      <Value Profile="(Default)">쿠팡 김천 FC 신축공사</Value>
+      <Value Profile="(Default)">Techo International Airport Project</Value>
     </Setting>
   </Settings>
 </SettingsFile>
