@@ -61,16 +61,16 @@
                             <TextBox x:Name="settingPmisWsProjectCode" HorizontalAlignment="Left" Height="23" Margin="10,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" TabIndex="1"/>
                             <Button x:Name="importRegisterDataButton" Content="Import Register Data" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" Padding="4,1" Click="importRegisterDataButton_Click"/>
                             <Button x:Name="importReviewDataButton" Content="Import Review Data" HorizontalAlignment="Left" Margin="177,181,0,0" VerticalAlignment="Top" Padding="4,1" Click="importReviewDataButton_Click"/>
-                            <GroupBox x:Name="groupBox5" Header="Data Stats" Height="89" Margin="558,10,10,0" VerticalAlignment="Top">
+                            <GroupBox x:Name="groupBox5" Header="Data Stats" Height="89" Margin="498,10,10,0" VerticalAlignment="Top">
                                 <Grid >
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="83*"/>
-                                        <ColumnDefinition Width="75*"/>
+                                        <ColumnDefinition Width="155*"/>
+                                        <ColumnDefinition Width="67*"/>
                                     </Grid.ColumnDefinitions>
                                     <Label x:Name="settingReviewCountLabel" Content="Review #" HorizontalAlignment="Right" Margin="0,7,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
                                     <Label x:Name="settingDocumentCountLabel" Content="Document #" HorizontalAlignment="Right" Margin="0,33,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
-                                    <TextBlock x:Name="settingsReviewCount" HorizontalAlignment="Left" Margin="3,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1"/>
-                                    <TextBlock x:Name="settingsDocumentCount" HorizontalAlignment="Left" Margin="3,38,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1"/>
+                                    <TextBlock x:Name="settingsReviewCount" HorizontalAlignment="Left" Margin="3,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1" Height="20" Width="27"/>
+                                    <TextBlock x:Name="settingsDocumentCount" HorizontalAlignment="Left" Margin="3,38,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1" Height="20" Width="27"/>
                                 </Grid>
                             </GroupBox>
                             <Label x:Name="apiUrlLabel" Content="API Url" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
