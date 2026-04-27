@@ -69,8 +69,8 @@
                                     </Grid.ColumnDefinitions>
                                     <Label x:Name="settingReviewCountLabel" Content="Review #" HorizontalAlignment="Right" Margin="0,7,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
                                     <Label x:Name="settingDocumentCountLabel" Content="Document #" HorizontalAlignment="Right" Margin="0,33,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
-                                    <TextBlock x:Name="settingsReviewCount" HorizontalAlignment="Left" Margin="3,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1" Height="20" Width="27"/>
-                                    <TextBlock x:Name="settingsDocumentCount" HorizontalAlignment="Left" Margin="3,38,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1" Height="20" Width="27"/>
+                                    <TextBlock x:Name="settingsReviewCount" HorizontalAlignment="Left" Margin="3,12,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1" Height="20"/>
+                                    <TextBlock x:Name="settingsDocumentCount" HorizontalAlignment="Left" Margin="3,38,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Grid.Column="1" Height="20"/>
                                 </Grid>
                             </GroupBox>
                             <Label x:Name="apiUrlLabel" Content="API Url" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
