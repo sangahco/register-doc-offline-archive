@@ -25,7 +25,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://llsh.kspmis.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://asml.kspmis.com")]
         public string pmis_api_url {
             get {
                 return ((string)(this["pmis_api_url"]));
@@ -37,7 +37,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("LLSH_PMIS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ASML_PMIS")]
         public string pmis_project_code {
             get {
                 return ((string)(this["pmis_project_code"]));
@@ -309,7 +309,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("data/llsh.db")]
+        [global::System.Configuration.DefaultSettingValueAttribute("data/asml.db")]
         public string sqlite_db_location {
             get {
                 return ((string)(this["sqlite_db_location"]));
@@ -377,7 +377,7 @@ namespace pmis.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("LEGOLAND Shanghai Resort Project")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ASML")]
         public string current_profile {
             get {
                 return ((string)(this["current_profile"]));
